@@ -32,5 +32,11 @@ And others language extensions depending on what language I am working with at t
 ## iTerm2
 Import `./iTerm2` in iTerm2 preferences in `General -> Preferences -> Load preferences from a custom folder or URL`.
 
+### Colors
+Import colors with:
+```sh
+$ open ./iTerm2/colors.itermcolors
+```
+
 ## Coming :soon:
 - `./install.sh`

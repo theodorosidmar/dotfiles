@@ -26,6 +26,7 @@ Download [link](https://code.visualstudio.com/download).
 - [VSCode Great Icons](https://github.com/EmmanuelBeziat/vscode-great-icons)
 - [Beautify](https://github.com/HookyQR/VSCodeBeautify)
 - [DotENV](https://github.com/mikestead/vscode-dotenv)
+- [API Elements extension](https://github.com/XVincentX/vscode-apielements)
 
 And others language extensions depending on what language I am working with at the moment!
 

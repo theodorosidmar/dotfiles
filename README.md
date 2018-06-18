@@ -30,3 +30,4 @@ Download [link](https://code.visualstudio.com/download).
 And others language extensions depending on what language I am working with at the moment!
 
 ## Coming :soon:
+- `./install.sh`

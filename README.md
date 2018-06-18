@@ -29,5 +29,8 @@ Download [link](https://code.visualstudio.com/download).
 
 And others language extensions depending on what language I am working with at the moment!
 
+## iTerm2
+Import `./iTerm2` in iTerm2 preferences in `General -> Preferences -> Load preferences from a custom folder or URL`.
+
 ## Coming :soon:
 - `./install.sh`

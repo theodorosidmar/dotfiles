@@ -17,7 +17,7 @@ Download [link](https://code.visualstudio.com/download).
     }
 }
 ```
-`"terminal.integrated.fontFamily": "Meslo LG M for Powerline"` when using ZSH, Agnoster and Meslo LG M for Powerline fonts
+- `"terminal.integrated.fontFamily": "Meslo LG M for Powerline"` when using ZSH, Agnoster and Meslo LG M for Powerline fonts.
 
 ### Extensions
 - [EditorConfig](https://github.com/editorconfig/editorconfig-vscode)
@@ -28,6 +28,9 @@ Download [link](https://code.visualstudio.com/download).
 - [DotENV](https://github.com/mikestead/vscode-dotenv)
 
 And others language extensions depending on what language I am working with at the moment!
+
+## iTerm2
+Import `./iTerm2` in iTerm2 preferences in `General -> Preferences -> Load preferences from a custom folder or URL`.
 
 ## Coming :soon:
 - `./install.sh`

@@ -17,7 +17,7 @@ Download [link](https://code.visualstudio.com/download).
     }
 }
 ```
-`"terminal.integrated.fontFamily": "Meslo LG M for Powerline"` when using ZSH, Agnoster and Meslo LG M for Powerline fonts
+- `"terminal.integrated.fontFamily": "Meslo LG M for Powerline"` when using ZSH, Agnoster and Meslo LG M for Powerline fonts.
 
 ### Extensions
 - [EditorConfig](https://github.com/editorconfig/editorconfig-vscode)

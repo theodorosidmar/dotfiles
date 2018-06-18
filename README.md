@@ -4,7 +4,7 @@ A summary of my personal environment config! :slightly_smiling_face:
 ## Visual Studio Code
 Download [link](https://code.visualstudio.com/download).
 
-### Actually preferences
+### Current preferences
 ```json
 {
     "workbench.iconTheme": "vscode-great-icons",

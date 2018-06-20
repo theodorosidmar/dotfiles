@@ -8,6 +8,7 @@ Download [link](https://code.visualstudio.com/download).
 ```json
 {
     "workbench.iconTheme": "vscode-great-icons",
+    "terminal.integrated.shell.osx": "zsh",
     "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
     "editor.rulers": [ 100 ],
     "editor.detectIndentation": true,

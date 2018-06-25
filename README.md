@@ -13,6 +13,7 @@ Download [link](https://code.visualstudio.com/download).
     "editor.rulers": [ 100 ],
     "editor.detectIndentation": true,
     "editor.lineHeight": 24,
+    "editor.renderWhitespace": "all",
     "workbench.colorCustomizations": {
         "editorLineNumber.activeForeground": "#FFF"
     }

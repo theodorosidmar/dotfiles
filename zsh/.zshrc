@@ -8,7 +8,9 @@ export ZSH="/Users/theodoro/.oh-my-zsh"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -59,16 +61,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  ruby
-  bundler
-  gem
-  rails
-  docker
-  node
-  npm
-)
+plugins=(git ruby bundler gem rails docker node npm)
 
 source $ZSH/oh-my-zsh.sh
 

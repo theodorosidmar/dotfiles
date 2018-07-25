@@ -16,7 +16,9 @@ Download [link](https://code.visualstudio.com/download).
     "editor.renderWhitespace": "all",
     "workbench.colorCustomizations": {
         "editorLineNumber.activeForeground": "#FFF"
-    }
+    },
+    "ruby.codeCompletion": "rcodetools",
+    "ruby.intellisense": "rubyLocate"
 }
 ```
 - `"terminal.integrated.fontFamily": "Meslo LG M for Powerline"` when using ZSH, Agnoster and Meslo LG M for Powerline fonts.

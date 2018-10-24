@@ -93,7 +93,7 @@ DEFAULT_USER="theodoro"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ll='ls -lGa'
+alias ll='ls -lGah'
 # END OF DEFAULT FILE
 
 ## rbenv

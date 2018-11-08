@@ -111,3 +111,7 @@ export NVM_DIR="$HOME/.nvm"
 ## Stop `no matches found`
 unsetopt nomatch
 
+# Colors
+unset LSCOLORS
+export CLICOLOR=1
+export CLICOLOR_FORCE=1

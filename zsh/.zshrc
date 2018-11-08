@@ -9,8 +9,9 @@ export ZSH="/Users/theodoro/.oh-my-zsh"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="agnoster"
-ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
+# ZSH_THEME="powerlevel9k/powerlevel9k"
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
+ZSH_THEME="xxf"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random

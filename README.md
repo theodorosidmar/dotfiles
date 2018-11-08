@@ -45,5 +45,15 @@ Import colors with:
 $ open ./iTerm2/colors.itermcolors
 ```
 
+### Theme
+Currently using **oh-my-zsh** `xxf` theme. Download it from [here](https://gist.github.com/xfanwu/18fd7c24360c68bab884) and move to `~/.oh-my-zsh/themes/`
+
+If `ls` colors are not showing:
+```
+unset LSCOLORS
+export CLICOLOR=1
+export CLICOLOR_FORCE=1
+```
+
 ## Coming :soon:
 - `./install.sh`

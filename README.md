@@ -9,7 +9,6 @@ Download [link](https://code.visualstudio.com/download).
 {
     "workbench.iconTheme": "vscode-great-icons",
     "terminal.integrated.shell.osx": "zsh",
-    "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
     "editor.rulers": [ 100 ],
     "editor.detectIndentation": true,
     "editor.lineHeight": 24,
@@ -19,7 +18,11 @@ Download [link](https://code.visualstudio.com/download).
     },
     "ruby.codeCompletion": "rcodetools",
     "ruby.intellisense": "rubyLocate",
-    "breadcrumbs.enabled": true
+    "breadcrumbs.enabled": true,
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "search.showLineNumbers": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "breadcrumbs.symbolSortOrder": "name"
 }
 ```
 - `"terminal.integrated.fontFamily": "Meslo LG M for Powerline"` when using ZSH, Agnoster and Meslo LG M for Powerline fonts.

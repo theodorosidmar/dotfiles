@@ -10,7 +10,8 @@ Download [link](https://code.visualstudio.com/download).
     "workbench.iconTheme": "vscode-great-icons",
     "terminal.integrated.shell.osx": "zsh",
     "editor.rulers": [ 100 ],
-    "editor.detectIndentation": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
     "editor.lineHeight": 24,
     "editor.renderWhitespace": "all",
     "workbench.colorCustomizations": {

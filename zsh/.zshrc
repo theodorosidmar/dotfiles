@@ -95,6 +95,7 @@ DEFAULT_USER="theodoro"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll='ls -lGah'
+alias dcu='docker-compose up'
 # END OF DEFAULT FILE
 
 ## rbenv

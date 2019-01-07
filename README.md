@@ -39,6 +39,7 @@ Download [link](https://code.visualstudio.com/download).
 - [vscode-proto3](https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3)
 - [Docker](https://github.com/microsoft/vscode-docker)
 - [GitConfig Syntax](https://github.com/Sidneys1/GitConfigVSCode)
+- [ESLint](https://github.com/Microsoft/vscode-eslint)
 
 And others language extensions depending on what language I am working with at the moment!
 

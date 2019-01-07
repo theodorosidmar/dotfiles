@@ -37,6 +37,8 @@ Download [link](https://code.visualstudio.com/download).
 - [DotENV](https://github.com/mikestead/vscode-dotenv)
 - [API Elements extension](https://github.com/XVincentX/vscode-apielements)
 - [vscode-proto3](https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3)
+- [Docker](https://github.com/microsoft/vscode-docker)
+- [GitConfig Syntax](https://github.com/Sidneys1/GitConfigVSCode)
 
 And others language extensions depending on what language I am working with at the moment!
 

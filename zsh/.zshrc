@@ -96,6 +96,7 @@ DEFAULT_USER="theodoro"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll='ls -lGah'
 alias dcu='docker-compose up'
+alias dcd='docker-compose down'
 alias dcub='docker-compose up --build'
 # END OF DEFAULT FILE
 

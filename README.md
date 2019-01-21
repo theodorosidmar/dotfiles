@@ -1,5 +1,5 @@
 # dotfiles
-A summary of my personal environment config! :slightly_smiling_face:
+A summary of my personal environment config! 🙂
 
 ## Visual Studio Code
 Download [link](https://code.visualstudio.com/download).
@@ -43,24 +43,11 @@ Download [link](https://code.visualstudio.com/download).
 
 And others language extensions depending on what language I am working with at the moment!
 
-## iTerm2
-Import `./iTerm2` in iTerm2 preferences in `General -> Preferences -> Load preferences from a custom folder or URL`.
-
-### Colors
-Import colors with:
-```sh
-$ open ./iTerm2/colors.itermcolors
-```
+## Hyper (terminal)
+Download [link](https://hyper.is).
 
 ### Theme
 Currently using **oh-my-zsh** `xxf` theme. Download it from [here](https://gist.github.com/xfanwu/18fd7c24360c68bab884) and move to `~/.oh-my-zsh/themes/`
-
-If `ls` colors are not showing:
-```
-unset LSCOLORS
-export CLICOLOR=1
-export CLICOLOR_FORCE=1
-```
 
 ## Coming :soon:
 - `./install.sh`

@@ -11,7 +11,8 @@ export ZSH="/Users/theodoro/.oh-my-zsh"
 # ZSH_THEME="agnoster"
 # ZSH_THEME="powerlevel9k/powerlevel9k"
 # POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
-ZSH_THEME="xxf"
+# ZSH_THEME="xxf"
+ZSH_THEME="af-magic"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -98,7 +99,7 @@ alias ll='ls -lGah'
 alias dcu='docker-compose up'
 alias dcd='docker-compose down'
 alias dcub='docker-compose up --build'
-# END OF DEFAULT FILE
+alias dm='docker-machine'
 
 ## rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

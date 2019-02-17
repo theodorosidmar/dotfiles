@@ -100,6 +100,7 @@ alias dcu='docker-compose up'
 alias dcd='docker-compose down'
 alias dcub='docker-compose up --build'
 alias dm='docker-machine'
+alias sls='serverless'
 
 ## rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

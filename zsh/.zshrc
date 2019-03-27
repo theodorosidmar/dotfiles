@@ -12,7 +12,8 @@ export ZSH="/Users/theodoro/.oh-my-zsh"
 # ZSH_THEME="powerlevel9k/powerlevel9k"
 # POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
 # ZSH_THEME="xxf"
-ZSH_THEME="af-magic"
+# ZSH_THEME="af-magic"
+ZSH_THEME="bira"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random

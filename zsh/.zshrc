@@ -102,6 +102,7 @@ alias dcd='docker-compose down'
 alias dcub='docker-compose up --build'
 alias dm='docker-machine'
 alias sls='serverless'
+alias g='$GOPATH/bin/g'
 
 ## rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
@@ -121,3 +122,5 @@ unsetopt nomatch
 unset LSCOLORS
 export CLICOLOR=1
 export CLICOLOR_FORCE=1
+
+export GOPATH="$HOME/go"; export GOROOT="$HOME/.go"; PATH="$GOPATH/bin:$PATH"; # g-install: do NOT edit, see https://github.com/stefanmaric/g

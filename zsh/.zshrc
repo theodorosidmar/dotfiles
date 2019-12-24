@@ -1,4 +1,4 @@
-export ZSH="/home/theodorosidmar/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Theme
 POWERLEVEL9K_MODE="nerdfont-complete"

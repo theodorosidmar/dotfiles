@@ -33,6 +33,7 @@ alias dm='docker-machine'
 
 # Variables
 export WORKSPACE=$HOME/workspace
+export DOTFILES=$HOME/dotfiles
 
 # nvm (Node Version Manager)
 export NVM_DIR="$HOME/.nvm"

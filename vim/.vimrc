@@ -14,3 +14,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 :set number
 :set autoindent
+
+" Disable netrwhist (annoying history collection)
+let g:netrw_dirhistmax = 0
+

@@ -1,0 +1,8 @@
+[user]
+	name = Sidmar Theodoro
+	email = theodorosidmar@gmail.com
+[color]
+	ui = true
+[pager]
+	branch = false
+	stash = false

@@ -6,3 +6,5 @@
 [pager]
 	branch = false
 	stash = false
+[core]
+	excludesfile = /home/theodorosidmar/.gitignore

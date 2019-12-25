@@ -5,16 +5,18 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-" NERDTree
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree' " NERDTree
+Plug 'ryanoasis/vim-devicons' " vim-devicons
 call plug#end()
 
+" NERDTREE config
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
-:set number
-:set autoindent
+let NERDTreeShowHidden=1
 
 " Disable netrwhist (annoying history collection)
 let g:netrw_dirhistmax = 0
 
+set encoding=UTF-8
+set number
+set autoindent

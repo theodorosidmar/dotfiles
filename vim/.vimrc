@@ -7,6 +7,7 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree' " NERDTree
 Plug 'ryanoasis/vim-devicons' " vim-devicons
+Plug 'vim-airline/vim-airline' " vim-arline statusline
 call plug#end()
 
 " NERDTREE config

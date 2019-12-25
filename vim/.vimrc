@@ -5,9 +5,10 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'scrooloose/nerdtree' " NERDTree
-Plug 'ryanoasis/vim-devicons' " vim-devicons
-Plug 'vim-airline/vim-airline' " vim-arline statusline
+Plug 'scrooloose/nerdtree'        " NERDTree
+Plug 'ryanoasis/vim-devicons'     " vim-devicons
+Plug 'vim-airline/vim-airline'    " vim-arline statusline
+Plug 'leafgarland/typescript-vim' " TypeScript
 call plug#end()
 
 " NERDTREE config
@@ -18,6 +19,10 @@ let NERDTreeShowHidden=1
 " Disable netrwhist (annoying history collection)
 let g:netrw_dirhistmax = 0
 
+" TypeSript
+let g:typescript_indent_disable = 1
+
 set encoding=UTF-8
 set number
 set autoindent
+

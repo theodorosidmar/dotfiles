@@ -9,6 +9,8 @@ Plug 'scrooloose/nerdtree'        " NERDTree
 Plug 'ryanoasis/vim-devicons'     " vim-devicons
 Plug 'vim-airline/vim-airline'    " vim-arline statusline
 Plug 'leafgarland/typescript-vim' " TypeScript
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " NERDTREE config

@@ -24,7 +24,12 @@ let g:netrw_dirhistmax = 0
 " TypeSript
 let g:typescript_indent_disable = 1
 
+" fzf
+map <C-p> :call fzf#run({'sink': 'e'})<CR>
+nnoremap <silent> <C-t> :call fzf#run({'sink':'tabe','down':'30%'})<CR>
+
 set encoding=UTF-8
 set number
 set autoindent
 set hidden
+

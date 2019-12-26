@@ -9,8 +9,8 @@ Plug 'scrooloose/nerdtree'        " NERDTree
 Plug 'ryanoasis/vim-devicons'     " vim-devicons
 Plug 'vim-airline/vim-airline'    " vim-arline statusline
 Plug 'leafgarland/typescript-vim' " TypeScript
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' } " fzf
+Plug 'junegunn/fzf.vim' " fzf
 call plug#end()
 
 " NERDTREE config
@@ -27,4 +27,4 @@ let g:typescript_indent_disable = 1
 set encoding=UTF-8
 set number
 set autoindent
-
+set hidden

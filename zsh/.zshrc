@@ -29,7 +29,10 @@ alias ll='ls -lGah'
 alias dcu='docker-compose up'
 alias dcd='docker-compose down'
 alias dcub='docker-compose up --build'
-alias dm='docker-machine'
+alias drmiu='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
+alias ave='aws-vault exec'
+alias avde='aws-vault --debug exec'
+alias avl='aws-vault login'
 
 # Variables
 export WORKSPACE=$HOME/workspace

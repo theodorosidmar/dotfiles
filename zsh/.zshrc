@@ -45,3 +45,10 @@ export NVM_DIR="$HOME/.nvm"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# asdf
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
+# tfenv
+export PATH="$HOME/.tfenv/bin:$PATH"

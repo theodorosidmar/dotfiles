@@ -8,7 +8,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'        " NERDTree
 Plug 'ryanoasis/vim-devicons'     " vim-devicons
 Plug 'vim-airline/vim-airline'    " vim-arline statusline
-Plug 'leafgarland/typescript-vim' " TypeScript
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --ts-completer' } " YouCompleteMe
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' } " fzf
 Plug 'junegunn/fzf.vim' " fzf
 call plug#end()
@@ -21,9 +21,6 @@ let NERDTreeShowHidden=1
 " Disable netrwhist (annoying history collection)
 let g:netrw_dirhistmax = 0
 
-" TypeSript
-let g:typescript_indent_disable = 1
-
 " fzf
 map <C-p> :call fzf#run({'sink': 'e'})<CR>
 nnoremap <silent> <C-t> :call fzf#run({'sink':'tabe','down':'30%'})<CR>
@@ -32,4 +29,3 @@ set encoding=UTF-8
 set number
 set autoindent
 set hidden
-

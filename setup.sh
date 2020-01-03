@@ -6,11 +6,14 @@ base=(
 )
 
 system=(
+  i3
+  polybar
   fonts
 )
 
 code=(
   vim
+  alacritty
 )
 
 apps=( "${base[@]}" "${system[@]}" "${code[@]}" )

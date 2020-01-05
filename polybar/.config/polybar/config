@@ -45,7 +45,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 modules-left = i3
 modules-center =
-modules-right = pulseaudio memory cpu temperature date
+modules-right = pulseaudio memory cpu temperature network date
 tray-position = right
 tray-padding = 2
 cursor-click = pointer
@@ -136,6 +136,11 @@ ramp-0 = 
 ramp-1 = 
 ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
+
+[module/network]
+type = internal/network
+interface = ${env:DEFAULT_NETWORK_INTERFACE:enp4s0}
+interval = 1.0
 
 [module/date]
 type = internal/date

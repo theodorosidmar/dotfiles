@@ -27,5 +27,6 @@ nnoremap <silent> <C-t> :call fzf#run({'sink':'tabe','down':'30%'})<CR>
 
 set encoding=UTF-8
 set number
+set relativenumber
 set autoindent
 set hidden

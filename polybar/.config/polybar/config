@@ -45,7 +45,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 modules-left = i3
 modules-center = mpd
-modules-right = xbacklight alsa pulseaudio memory cpu wlan eth temperature date
+modules-right = alsa pulseaudio memory cpu wlan eth temperature date
 tray-position = right
 tray-padding = 2
 cursor-click = pointer
@@ -91,26 +91,6 @@ icon-pause = 
 icon-next = 
 label-song-maxlen = 25
 label-song-ellipsis = true
-
-[module/xbacklight]
-type = internal/xbacklight
-format = <label> <bar>
-label = BL
-bar-width = 10
-bar-indicator = |
-bar-indicator-foreground = #fff
-bar-indicator-font = 2
-bar-fill = ─
-bar-fill-font = 2
-bar-fill-foreground = #9f78e1
-bar-empty = ─
-bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
-
-[module/backlight-acpi]
-inherit = module/xbacklight
-type = internal/backlight
-card = intel_backlight
 
 [module/cpu]
 type = internal/cpu

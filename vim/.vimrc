@@ -9,7 +9,7 @@ Plug 'scrooloose/nerdtree'        " NERDTree
 Plug 'ryanoasis/vim-devicons'     " vim-devicons
 Plug 'vim-airline/vim-airline'    " vim-arline statusline
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --ts-completer' } " YouCompleteMe
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' } " fzf
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " fzf
 Plug 'junegunn/fzf.vim' " fzf
 call plug#end()
 

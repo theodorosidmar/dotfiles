@@ -45,7 +45,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 modules-left = i3
 modules-center =
-modules-right = pulseaudio cpu memory temperature network date
+modules-right = pulseaudio cpu memory temperature network battery date
 tray-position = right
 tray-padding = 2
 cursor-click = pointer
@@ -136,11 +136,17 @@ type = internal/network
 interface = ${env:DEFAULT_NETWORK_INTERFACE:enp4s0}
 interval = 1.0
 
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+pool-interval = 5
+
 [module/date]
 type = internal/date
 interval = 1
 date = "%d-%m-%Y"
-time= %H:%M:%S
+time = %H:%M:%S
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 label = %date% %time%

@@ -1,6 +1,6 @@
 [submodule "nerdtree"]
 	path = "vim/.vim/pluggled/nerdtree"
-	url = https://github.com/scrooloose/nerdtree.git
+	url = "https://github.com/scrooloose/nerdtree.git"
 [submodule "vim-devicons"]
 	path = "vim/.vim/pluggled/vim-devicons"
 	url = "https://github.com/ryanoasis/vim-devicons.git"

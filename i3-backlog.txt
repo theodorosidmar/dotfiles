@@ -1,0 +1,2 @@
+1. Learn better how to manage windows
+2. Configure a good Polybar

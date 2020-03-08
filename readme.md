@@ -12,4 +12,4 @@ Organizing dotfiles using [Stow](https://www.gnu.org/software/stow/).
 3. Copy and paste are totally bad
 4. Learn how to move lines & texts
 5. Learn how to find a text
-6. Set :NERDTreeToggle a shortcut
+6. Set `:NERDTreeToggle` a shortcut

@@ -1,15 +1,9 @@
 [submodule "nerdtree"]
 	path = "vim/.vim/pluggled/nerdtree"
 	url = "https://github.com/scrooloose/nerdtree.git"
-[submodule "vim-devicons"]
-	path = "vim/.vim/pluggled/vim-devicons"
-	url = "https://github.com/ryanoasis/vim-devicons.git"
 [submodule "vim-airline"]
 	path = "vim/.vim/pluggled/vim-airline"
 	url = "https://github.com/vim-airline/vim-airline.git"
-[submodule "YouCompleteMe"]
-	path = "vim/.vim/pluggled/YouCompleteMe"
-	url = "https://github.com/Valloric/YouCompleteMe.git"
 [submodule "fzf"]
 	path = "vim/.vim/pluggled/fzf.vim"
 	url = "https://github.com/junegunn/fzf.vim.git"

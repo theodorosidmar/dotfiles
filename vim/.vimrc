@@ -8,9 +8,7 @@ let g:plug_timeout = 180
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'        " NERDTree
-Plug 'ryanoasis/vim-devicons'     " vim-devicons
 Plug 'vim-airline/vim-airline'    " vim-arline statusline
-Plug 'Valloric/YouCompleteMe', { 'do': 'python3 ./install.py --ts-completer --clang-completer' } " YouCompleteMe
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " fzf
 Plug 'junegunn/fzf.vim' " fzf
 call plug#end()

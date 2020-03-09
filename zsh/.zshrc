@@ -13,6 +13,7 @@ plugins=(
   docker
   node
   npm
+  gradle
   zsh-autosuggestions
   zsh-syntax-highlighting
 )

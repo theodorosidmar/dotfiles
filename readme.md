@@ -13,3 +13,4 @@ Organizing dotfiles using [Stow](https://www.gnu.org/software/stow/).
 4. Learn how to move lines & texts
 5. Learn how to find a text
 6. Set `:NERDTreeToggle` a shortcut
+7. Render whitespace & configure indentation

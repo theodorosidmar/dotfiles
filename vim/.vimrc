@@ -30,3 +30,5 @@ set number
 set relativenumber
 set autoindent
 set hidden
+set listchars=space:·
+set list

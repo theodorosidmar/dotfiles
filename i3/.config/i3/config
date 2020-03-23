@@ -161,10 +161,6 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-# hide window title bar
-for_window [class="^.*"] border pixel 1
-new_window 1pixel
-
 # i3-gaps
 smart_gaps on
 gaps inner 8

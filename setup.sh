@@ -10,6 +10,8 @@ system=(
   i3
   polybar
   fonts
+  betterlockscreen
+  wallpapers
   xinitrc
   xresources
 )

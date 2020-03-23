@@ -166,6 +166,10 @@ smart_gaps on
 gaps inner 8
 gaps outer 2
 
+# betterlockscreen
+exec --no-startup-id betterlockscreen -w dim u ~/wallpapers
+bindsym $mod+Shift+x exec betterlockscreen -l dim u ~/wallpapers
+
 bar {
     status_command i3status
 }

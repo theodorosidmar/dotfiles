@@ -3,6 +3,11 @@
 	email = theodorosidmar@gmail.com
 [color]
 	ui = true
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red
+	new = green
 [pager]
 	branch = false
 	stash = false

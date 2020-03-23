@@ -1,9 +1,18 @@
+[submodule "zsh-autosuggestions"]
+	path = "ohmyzsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
+	url = "https://github.com/zsh-users/zsh-autosuggestions.git"
+[submodule "zsh-syntax-highlighting"]
+	path = "ohmyzsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
+	url = "https://github.com/zsh-users/zsh-syntax-highlighting.git"
+[submodule "powerlevel9k"]
+	path = "ohmyzsh/.oh-my-zsh/custom/themes/powerlevel9k"
+	url = "https://github.com/bhilburn/powerlevel9k.git"
 [submodule "nerdtree"]
-	path = "vim/.vim/pluggled/nerdtree"
+	path = "vim/.vim/plugged/nerdtree"
 	url = "https://github.com/scrooloose/nerdtree.git"
 [submodule "vim-airline"]
-	path = "vim/.vim/pluggled/vim-airline"
+	path = "vim/.vim/plugged/vim-airline"
 	url = "https://github.com/vim-airline/vim-airline.git"
-[submodule "fzf"]
-	path = "vim/.vim/pluggled/fzf.vim"
+[submodule "fzf-vim"]
+	path = "vim/.vim/plugged/fzf.vim"
 	url = "https://github.com/junegunn/fzf.vim.git"

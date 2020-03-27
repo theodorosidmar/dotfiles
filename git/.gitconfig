@@ -14,3 +14,11 @@
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim
+[merge]
+	tool = vimdiff
+	summary = true
+	verbosity = 1
+[mergetool]
+	prompt = false
+[push]
+	default = upstream

@@ -1,18 +1,30 @@
 [submodule "zsh-autosuggestions"]
-	path = "ohmyzsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
-	url = "https://github.com/zsh-users/zsh-autosuggestions.git"
+  path = "ohmyzsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
+  url = "https://github.com/zsh-users/zsh-autosuggestions.git"
 [submodule "zsh-syntax-highlighting"]
-	path = "ohmyzsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
-	url = "https://github.com/zsh-users/zsh-syntax-highlighting.git"
+  path = "ohmyzsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
+  url = "https://github.com/zsh-users/zsh-syntax-highlighting.git"
 [submodule "powerlevel9k"]
-	path = "ohmyzsh/.oh-my-zsh/custom/themes/powerlevel9k"
-	url = "https://github.com/bhilburn/powerlevel9k.git"
+  path = "ohmyzsh/.oh-my-zsh/custom/themes/powerlevel9k"
+  url = "https://github.com/bhilburn/powerlevel9k.git"
 [submodule "nerdtree"]
-	path = "vim/.vim/plugged/nerdtree"
-	url = "https://github.com/scrooloose/nerdtree.git"
+  path = "vim/.vim/plugged/nerdtree"
+  url = "https://github.com/scrooloose/nerdtree.git"
+[submodule "nerdcommenter"]
+  path = "vim/.vim/plugged/nerdcommenter"
+  url = "https://github.com/scrooloose/nerdcommenter.git"
+[submodule "gruvbox"]
+  path = "vim/.vim/plugged/gruvbox"
+  url = "https://github.com/morhetz/gruvbox.git"
+[submodule "coc.nvim"]
+  path = "vim/.vim/plugged/coc.nvim"
+  url = "https://github.com/neoclide/coc.nvim.git"
 [submodule "vim-airline"]
-	path = "vim/.vim/plugged/vim-airline"
-	url = "https://github.com/vim-airline/vim-airline.git"
+  path = "vim/.vim/plugged/vim-airline"
+  url = "https://github.com/vim-airline/vim-airline.git"
 [submodule "fzf-vim"]
-	path = "vim/.vim/plugged/fzf.vim"
-	url = "https://github.com/junegunn/fzf.vim.git"
+  path = "vim/.vim/plugged/fzf.vim"
+  url = "https://github.com/junegunn/fzf.vim.git"
+[submodule "yats.vim"]
+  path = "vim/.vim/plugged/yats.vim"
+  url = "https://github.com/HerringtonDarkholme/yats.vim.git"

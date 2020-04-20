@@ -19,8 +19,11 @@ Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 call plug#end()
 
 " Gruvbox
+syntax enable
 set background=dark
 colorscheme gruvbox
+let g:airline_theme='gruvbox'
+let g:airline_powerline_fonts=1
 
 " NERDTree
 autocmd StdinReadPre * let s:std_in=1

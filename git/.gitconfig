@@ -1,26 +1,26 @@
 [user]
-	name = Sidmar Theodoro
-	email = theodorosidmar@gmail.com
+  name = Sidmar Theodoro
+  email = theodorosidmar@gmail.com
 [color]
-	ui = true
+  ui = true
 [color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old = red
-	new = green
+  meta = yellow bold
+  frag = magenta bold
+  old = red
+  new = green
 [pager]
-	branch = false
-	stash = false
+  branch = false
+  stash = false
 [core]
-	excludesfile = ~/.gitignore
-	editor = vim
+  excludesfile = ~/.gitignore
+  editor = vim
 [merge]
-	tool = vimdiff
-	summary = true
-	verbosity = 1
+  tool = vimdiff
+  summary = true
+  verbosity = 1
 [mergetool]
-	prompt = false
+  prompt = false
 [push]
-	# 'git push' will push the current branch to its tracking branch
-	# the usual default is to push all branches
-	default = upstream
+  # 'git push' will push the current branch to its tracking branch
+  # the usual default is to push all branches
+  default = upstream

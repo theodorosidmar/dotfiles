@@ -167,7 +167,7 @@ gaps inner 8
 gaps outer 2
 
 # betterlockscreen
-exec --no-startup-id betterlockscreen -w dim u ~/wallpapers
+exec --no-startup-id betterlockscreen -w blur u ~/wallpapers
 bindsym $mod+Shift+x exec betterlockscreen -l dim u ~/wallpapers
 
 bar {

@@ -197,8 +197,18 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 let g:netrw_dirhistmax = 0 " Disable netrwhist (annoying history collection)
+
+" jk is esc in insert mode
 inoremap jk <ESC>
+
+" Ctrl n creates a new empty file in vertical
 map <C-n> :vnew<CR>
+
+" \q save all and quit
+nnoremap <leader>q :wqa<CR>
+
+set cursorline " add guideline 
+set showmatch  " highlight matching [{()}]
 set encoding=UTF-8
 set number
 set relativenumber

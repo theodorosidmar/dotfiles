@@ -1,4 +1,4 @@
-" Vim Plug config
+" Vim Plug
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -18,11 +18,11 @@ Plug 'morhetz/gruvbox' " Gruvbox theme
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 call plug#end()
 
-"Gruvbox config
+" Gruvbox
 set background=dark
 colorscheme gruvbox
 
-" NERDTREE config
+" NERDTree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let NERDTreeShowHidden=1
@@ -31,15 +31,15 @@ let NERDTreeShowLineNumbers=1
 map <C-b> :NERDTreeToggle<CR>
 let g:NERDTreeGitStatusWithFlags = 1
 
-" NERDCommenter config
+" NERDCommenter
 nmap <C-_> <Plug>NERDCommenterToggle
 vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
 
-" fzf config
+" fzf
 map <C-p> :call fzf#run({'sink': 'e'})<CR>
 nnoremap <silent> <C-t> :call fzf#run({'sink':'tabe','down':'30%'})<CR>
 
-" coc.nvim config
+" coc.nvim
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
@@ -192,7 +192,6 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-" Personal config
 let g:netrw_dirhistmax = 0 " Disable netrwhist (annoying history collection)
 inoremap jk <ESC>
 map <C-n> :vnew<CR>

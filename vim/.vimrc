@@ -31,8 +31,9 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
 let NERDTreeShowLineNumbers=1
-map <C-b> :NERDTreeToggle<CR>
 let g:NERDTreeGitStatusWithFlags = 1
+map <C-f> :NERDTreeFocus<CR>
+map <C-b> :NERDTreeToggle<CR>
 
 " NERDCommenter
 nmap <C-_> <Plug>NERDCommenterToggle

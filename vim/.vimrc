@@ -241,20 +241,49 @@ nnoremap <leader>q :wqa<CR>
 
 " Add guideline 
 set cursorline
+
 " Highlight matching [{()}]
 set showmatch
+
 " Encoding
 set encoding=UTF-8
+
 " Show line numbers
 set number relativenumber
+
 " Auto indent
 set autoindent
-set hidden
+
 " Show a · in white spaces
 set listchars=space:·
 set list
+
 " Indent with two spaces
 set expandtab
 set smarttab
 set tabstop=2
 set shiftwidth=2
+
+" Splits and tabbed files
+set splitright splitbelow
+
+" Remap splits navigation to just CTRL + hjkl
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" <leader>tt opens terminal inside Vim
+map <leader>tt :term<CR>
+
+" Change 2 split windows from vert to horiz or horiz to vert
+" <leader>th changes to horizontal
+" <leader>tk changes to vertical
+map <leader>th <C-w>t<C-w>H
+map <leader>tk <C-w>t<C-w>K
+
+" Ctrl arrows makes adjusing split sizes a bit more friendly
+noremap <silent> <C-Left> :vertical resize +3<CR>
+noremap <silent> <C-Right> :vertical resize -3<CR>
+noremap <silent> <C-Up> :resize +3<CR>
+noremap <silent> <C-Down> :resize -3<CR>

@@ -19,7 +19,7 @@ Plug 'scrooloose/nerdcommenter'
 " vim-airline-statusline
 Plug 'vim-airline/vim-airline'
 " fzf
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " Gruvbox theme
 Plug 'morhetz/gruvbox'

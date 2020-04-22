@@ -1,4 +1,6 @@
-" Vim Plug
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vim Plug
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -8,42 +10,68 @@ endif
 let g:plug_timeout = 180
 
 call plug#begin('~/.vim/plugged')
-Plug 'neoclide/coc.nvim', {'branch': 'release'} " coc.nvim
-Plug 'scrooloose/nerdtree'      " NERDTree
-Plug 'scrooloose/nerdcommenter' " NERDCommenter
-Plug 'vim-airline/vim-airline'  " vim-arline statusline
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " fzf
-Plug 'junegunn/fzf.vim' " fzf
-Plug 'morhetz/gruvbox' " Gruvbox theme
-Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
+" coc.nvim
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" NERDTree
+Plug 'scrooloose/nerdtree'
+" NERDCommenter
+Plug 'scrooloose/nerdcommenter'
+" vim-airline-statusline
+Plug 'vim-airline/vim-airline'
+" fzf
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+" Gruvbox theme
+Plug 'morhetz/gruvbox'
+" TS Syntax
+Plug 'HerringtonDarkholme/yats.vim'
 call plug#end()
 
-" Gruvbox
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Gruvbox
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
 set background=dark
 colorscheme gruvbox
 let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts=1
 
-" NERDTree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => NERDTree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd StdinReadPre * let s:std_in=1
+" Open NERDTree when vim is used with no parameters
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" Show hidden files
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
+" Show line numbers on NERDTree
 let NERDTreeShowLineNumbers=1
 let g:NERDTreeGitStatusWithFlags = 1
+" Ctrl f to focus on NERDTree
 map <C-f> :NERDTreeFocus<CR>
+" Ctrl b to open & close NERDTree
 map <C-b> :NERDTreeToggle<CR>
 
-" NERDCommenter
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => NERDCommenter
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Ctrl / to comment in normal & visual mode
 nmap <C-_> <Plug>NERDCommenterToggle
 vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
 
-" fzf
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => fzf
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Ctrl p to open a file & replace current opened file
 map <C-p> :call fzf#run({'sink': 'e'})<CR>
+" Ctrl t to open a file in another tab
 nnoremap <silent> <C-t> :call fzf#run({'sink':'tabe','down':'30%'})<CR>
 
-" coc.nvim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => coc.nvim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Extensions
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
@@ -53,7 +81,7 @@ let g:coc_global_extensions = [
   \ 'coc-json', 
   \ ]
 
-" prettier command for coc
+" Prettier command for coc
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " TextEdit might fail if hidden is not set.
@@ -126,7 +154,7 @@ endfunction
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-" Symbol renaming.
+" F2 to refactor/rename
 nmap <F2> <Plug>(coc-rename)
 
 " Formatting selected code.
@@ -196,7 +224,11 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-let g:netrw_dirhistmax = 0 " Disable netrwhist (annoying history collection)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Personal config
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Disable netrwhist (annoying history collection)
+let g:netrw_dirhistmax = 0
 
 " jk is esc in insert mode
 inoremap jk <ESC>
@@ -204,19 +236,25 @@ inoremap jk <ESC>
 " Ctrl n creates a new empty file in vertical
 map <C-n> :vnew<CR>
 
-" \q save all and quit
+" <leader>q save all and quit
 nnoremap <leader>q :wqa<CR>
 
-set cursorline " add guideline 
-set showmatch  " highlight matching [{()}]
+" Add guideline 
+set cursorline
+" Highlight matching [{()}]
+set showmatch
+" Encoding
 set encoding=UTF-8
-set number
-set relativenumber
+" Show line numbers
+set number relativenumber
+" Auto indent
 set autoindent
 set hidden
+" Show a · in white spaces
 set listchars=space:·
 set list
+" Indent with two spaces
 set expandtab
 set smarttab
-set shiftwidth=2
 set tabstop=2
+set shiftwidth=2

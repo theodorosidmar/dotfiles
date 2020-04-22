@@ -279,6 +279,9 @@ nnoremap <C-l> <C-w>l
 " <leader>tt opens terminal inside Vim
 map <leader>tt :term<CR>
 
+" Removes pipes | that act as seperators on splits
+set fillchars+=vert:\ 
+
 " Change 2 split windows from vert to horiz or horiz to vert
 " <leader>th changes to horizontal
 " <leader>tk changes to vertical

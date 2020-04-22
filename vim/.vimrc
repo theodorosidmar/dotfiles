@@ -258,6 +258,9 @@ set autoindent
 set listchars=space:·
 set list
 
+" Show pressed commands below status line
+set showcmd
+
 " Indent with two spaces
 set expandtab
 set smarttab

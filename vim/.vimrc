@@ -239,6 +239,8 @@ map <C-n> :vnew<CR>
 
 " <leader>q save all and quit
 nnoremap <leader>q :wqa<CR>
+" <leader>w save file
+nnoremap <leader>w :w<CR>
 
 " Add guideline 
 set cursorline

@@ -75,6 +75,10 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc.nvim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" git
+let g:coc_git_status=1
+let b:coc_git_status=1
+
 " Prettier command for coc
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 

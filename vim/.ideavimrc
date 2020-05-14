@@ -1,0 +1,36 @@
+let mapleader = " "
+
+set relativenumber number
+set ignorecase
+set smartcase
+set scrolloff=3 " 3 lines above/below cursor when scrolling
+set ideajoin
+
+" Integrate with system clipboard
+set clipboard=unnamedplus,unnamed
+
+" jk leaves insert mode
+inoremap jk <ESC>
+" ,. leaves visual mode
+vnoremap ,. <Esc>
+
+" J & K moves text selected up and down in visual mode
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+" Remap splits navigation to just CTRL + hjkl
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Code navigation
+nmap <leader>g :action GotoDeclaration<cr>
+nmap <leader>b :action Back<cr>
+nmap <leader>f :action Forward<cr>
+nmap <leader>t :action GotoFile<cr>
+nmap <leader>c :action GotoClass<cr>
+nmap <leader>ns :action GotoSymbol<cr>
+nmap <leader>nm :action FileStructurePopup<cr>
+nmap <leader>d :action ShowErrorDescription<cr>
+nmap == :action ReformatCode<cr>

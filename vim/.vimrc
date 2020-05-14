@@ -67,7 +67,10 @@ let g:ctrlp_use_caching = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => fzf
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <Leader>ps :Ag<SPACE>
+nnoremap <Leader>ps :Rg<SPACE>
+if executable('rg')
+    let g:rg_derive_root='true'
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc.nvim

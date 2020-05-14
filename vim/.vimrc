@@ -16,7 +16,7 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'scrooloose/nerdtree'
 " NERDCommenter
 Plug 'scrooloose/nerdcommenter'
-" vim-airline-statusline
+" Status line
 Plug 'vim-airline/vim-airline'
 " Search content
 Plug 'git@github.com:kien/ctrlp.vim.git'

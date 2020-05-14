@@ -18,9 +18,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 " vim-airline-statusline
 Plug 'vim-airline/vim-airline'
-" fzf
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+" Search content
+Plug 'git@github.com:kien/ctrlp.vim.git'
 " Gruvbox theme
 Plug 'morhetz/gruvbox'
 " TS Syntax
@@ -58,12 +57,10 @@ nmap <C-_> <Plug>NERDCommenterToggle
 vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => fzf
+" => ctrlp
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Ctrl p to open a file & replace current opened file
-map <C-p> :call fzf#run({'sink': 'e'})<CR>
-" Ctrl t to open a file in another tab
-nnoremap <silent> <C-t> :call fzf#run({'sink':'tabe','down':'30%'})<CR>
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_use_caching = 0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc.nvim

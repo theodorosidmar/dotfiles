@@ -22,9 +22,9 @@
 [submodule "vim-airline"]
   path = "vim/.vim/plugged/vim-airline"
   url = "https://github.com/vim-airline/vim-airline.git"
-[submodule "fzf-vim"]
-  path = "vim/.vim/plugged/fzf.vim"
-  url = "https://github.com/junegunn/fzf.vim.git"
 [submodule "yats.vim"]
   path = "vim/.vim/plugged/yats.vim"
   url = "https://github.com/HerringtonDarkholme/yats.vim.git"
+[submodule "ctrlp.vim"]
+  path = "vim/.vim/plugged/ctrlp.vim"
+  url = "https://github.com/kien/ctrlp.vim.git"

@@ -10,7 +10,3 @@ Organizing dotfiles using [Stow](https://www.gnu.org/software/stow/).
 4. Configure it to use multiple monitors
 5. Configure pulseaudio (or `alsamixer` (?) or `pavucontrol` (?)) to control sound volume
 6. Learn & configure xinit & xresources
-### vim
-1. Cursor is totally not configured
-2. Learn how to move lines & texts
-3. Learn how to find a text in files in a directory

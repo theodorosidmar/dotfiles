@@ -39,17 +39,14 @@ let g:airline_powerline_fonts=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Open NERDTree when vim is used with no parameters
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Show hidden files
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
 " Show line numbers on NERDTree
 let NERDTreeShowLineNumbers=1
 let g:NERDTreeGitStatusWithFlags = 1
-" Ctrl f to focus on NERDTree
-map <C-f> :NERDTreeFocus<CR>
+" Ctrl f to open file in its directory
+map <C-f> :NERDTreeFind<CR>
 " Ctrl b to open & close NERDTree
 map <C-b> :NERDTreeToggle<CR>
 

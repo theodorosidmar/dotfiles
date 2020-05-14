@@ -28,6 +28,9 @@
 [submodule "ctrlp.vim"]
   path = "vim/.vim/plugged/ctrlp.vim"
   url = "https://github.com/kien/ctrlp.vim.git"
+[submodule "fzf"]
+  path = "vim/.vim/plugged/fzf"
+  url = "https://github.com/junegunn/fzf.git"
 [submodule "fzf-vim"]
   path = "vim/.vim/plugged/fzf.vim"
   url = "https://github.com/junegunn/fzf.vim.git"

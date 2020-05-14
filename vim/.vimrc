@@ -226,8 +226,6 @@ map <C-n> :vnew<CR>
 
 " <leader>q save all and quit
 nnoremap <leader>q :wqa<CR>
-" <leader>w save file
-nnoremap <leader>w :w<CR>
 
 " Add guideline 
 set cursorline
@@ -287,3 +285,7 @@ noremap <silent> <C-Down> :resize -3<CR>
 " J e K moves text select up & down in visual mode
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
+
+" Set colorcolumn
+set colorcolumn=120
+highlight ColorColumn ctermbg=0 guibg=lightgrey

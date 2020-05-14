@@ -20,6 +20,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 " Search content
 Plug 'git@github.com:kien/ctrlp.vim.git'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 " Gruvbox theme
 Plug 'morhetz/gruvbox'
 " TS Syntax
@@ -61,6 +63,11 @@ vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:ctrlp_use_caching = 0
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => fzf
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <Leader>ps :Ag<SPACE>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc.nvim

@@ -26,8 +26,9 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " Gruvbox theme
 Plug 'morhetz/gruvbox'
-" TS Syntax
-Plug 'HerringtonDarkholme/yats.vim'
+" Syntax highlighting
+Plug 'HerringtonDarkholme/yats.vim' " TypeScript
+Plug 'git@github.com:udalov/kotlin-vim.git' " Kotlin
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

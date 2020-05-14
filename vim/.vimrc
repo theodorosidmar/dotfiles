@@ -10,8 +10,8 @@ endif
 let g:plug_timeout = 180
 
 call plug#begin('~/.vim/plugged')
-" coc.nvim
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Code completion & help
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 " NERDTree
 Plug 'scrooloose/nerdtree'
 " NERDCommenter

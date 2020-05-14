@@ -18,6 +18,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 " Status line
 Plug 'vim-airline/vim-airline'
+" Git
+Plug 'tpope/vim-fugitive'
 " Search content
 Plug 'git@github.com:kien/ctrlp.vim.git'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }

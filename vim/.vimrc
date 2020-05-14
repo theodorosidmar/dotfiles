@@ -71,17 +71,6 @@ nnoremap <silent> <C-t> :call fzf#run({'sink':'tabe','down':'30%'})<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc.nvim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Extensions
-let g:coc_global_extensions = [
-  \ 'coc-snippets',
-  \ 'coc-pairs',
-  \ 'coc-tsserver',
-  \ 'coc-eslint', 
-  \ 'coc-tslint',
-  \ 'coc-prettier', 
-  \ 'coc-json', 
-  \ ]
-
 " Prettier command for coc
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 

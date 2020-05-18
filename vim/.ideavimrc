@@ -26,6 +26,7 @@ nnoremap <C-l> <C-w>l
 
 " Code navigation
 nmap <leader>g :action GotoDeclaration<cr>
+nmap <leader>u :action ShowUsages<cr>
 nmap <leader>b :action Back<cr>
 nmap <leader>f :action Forward<cr>
 nmap <leader>t :action GotoFile<cr>

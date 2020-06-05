@@ -28,8 +28,7 @@ Plug 'junegunn/fzf.vim'
 " Gruvbox theme
 Plug 'gruvbox-community/gruvbox'
 " Syntax highlighting
-Plug 'HerringtonDarkholme/yats.vim' " TypeScript
-Plug 'git@github.com:udalov/kotlin-vim.git' " Kotlin
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

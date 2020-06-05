@@ -22,9 +22,6 @@
 [submodule "vim-airline"]
   path = "vim/.vim/plugged/vim-airline"
   url = "https://github.com/vim-airline/vim-airline.git"
-[submodule "yats.vim"]
-  path = "vim/.vim/plugged/yats.vim"
-  url = "https://github.com/HerringtonDarkholme/yats.vim.git"
 [submodule "fzf"]
   path = "vim/.vim/plugged/fzf"
   url = "https://github.com/junegunn/fzf.git"
@@ -34,6 +31,6 @@
 [submodule "vim-fugitive"]
   path = "vim/.vim/plugged/vim-fugitive"
   url = "https://github.com/tpope/vim-fugitive.git"
-[submodule "vim-kotlin"]
-  path = "vim/.vim/plugged/kotlin-vim"
-  url = "https://github.com/udalov/kotlin-vim.git"
+[submodule "vim-polyglot"]
+  path = "vim/.vim/plugged/vim-polyglot"
+  url = "https://github.com/sheerun/vim-polyglot.git"

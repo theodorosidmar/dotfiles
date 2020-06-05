@@ -15,7 +15,7 @@
   url = "https://github.com/scrooloose/nerdcommenter.git"
 [submodule "gruvbox"]
   path = "vim/.vim/plugged/gruvbox"
-  url = "https://github.com/morhetz/gruvbox.git"
+  url = "https://github.com/gruvbox-community/gruvbox"
 [submodule "coc.nvim"]
   path = "vim/.vim/plugged/coc.nvim"
   url = "https://github.com/neoclide/coc.nvim.git"

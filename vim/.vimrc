@@ -27,7 +27,7 @@ Plug 'git@github.com:kien/ctrlp.vim.git'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " Gruvbox theme
-Plug 'morhetz/gruvbox'
+Plug 'gruvbox-community/gruvbox'
 " Syntax highlighting
 Plug 'HerringtonDarkholme/yats.vim' " TypeScript
 Plug 'git@github.com:udalov/kotlin-vim.git' " Kotlin

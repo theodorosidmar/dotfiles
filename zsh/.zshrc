@@ -51,6 +51,7 @@ export NVM_DIR="$HOME/.nvm"
 # asdf
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
+. $HOME/.asdf/plugins/java/set-java-home.zsh
 
 # tfenv
 export PATH="$HOME/.tfenv/bin:$PATH"

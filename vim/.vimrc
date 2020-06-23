@@ -23,14 +23,12 @@ Plug 'vim-airline/vim-airline'
 " Git
 Plug 'tpope/vim-fugitive'
 " Search content
-Plug 'git@github.com:kien/ctrlp.vim.git'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " Gruvbox theme
-Plug 'morhetz/gruvbox'
+Plug 'gruvbox-community/gruvbox'
 " Syntax highlighting
-Plug 'HerringtonDarkholme/yats.vim' " TypeScript
-Plug 'git@github.com:udalov/kotlin-vim.git' " Kotlin
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -64,14 +62,9 @@ nmap <C-_> <Plug>NERDCommenterToggle
 vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => ctrlp
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-let g:ctrlp_use_caching = 0
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => fzf
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <C-p> :GFiles<CR>
 nnoremap <Leader>ps :Rg<SPACE>
 if executable('rg')
     let g:rg_derive_root='true'

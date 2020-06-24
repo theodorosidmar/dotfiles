@@ -1,10 +1,10 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # Theme
-POWERLEVEL9K_MODE="nerdfont-complete"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode status ram time)
-ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL10K_MODE="nerdfont-complete"
+POWERLEVEL10K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
+POWERLEVEL10K_RIGHT_PROMPT_ELEMENTS=(vi_mode status ram time)
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Plugins
 plugins=(

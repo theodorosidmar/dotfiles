@@ -1,9 +1,8 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # Theme
-POWERLEVEL10K_MODE="nerdfont-complete"
-POWERLEVEL10K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
-POWERLEVEL10K_RIGHT_PROMPT_ELEMENTS=(vi_mode status ram time)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode status ram time)
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Plugins
@@ -60,3 +59,6 @@ export PATH="$HOME/.tfenv/bin:$PATH"
 # tabtab source for packages
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

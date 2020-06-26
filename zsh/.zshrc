@@ -1,8 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # Theme
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode status ram time)
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Plugins

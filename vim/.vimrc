@@ -29,7 +29,17 @@ Plug 'junegunn/fzf.vim'
 Plug 'gruvbox-community/gruvbox'
 " Syntax highlighting
 Plug 'sheerun/vim-polyglot'
+" Languages server
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 call plug#end()
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Languages servers
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd BufReadPost *.kt setlocal filetype=kotlin
+let g:LanguageClient_serverCommands = {
+    \ 'kotlin': ["kotlin-language-server"],
+    \ }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Gruvbox

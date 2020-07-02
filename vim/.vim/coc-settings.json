@@ -1,0 +1,8 @@
+{
+  "languageserver": {
+    "kotlin": {
+      "command": "~/.kotlin/kotlin-language-server/server/build/install/server/bin/kotlin-language-server",
+      "filetypes": ["kotlin"]
+    }
+  }
+}

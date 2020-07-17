@@ -10,6 +10,7 @@ plugins=(
   dnf
   docker
   node
+  deno
   npm
   gradle
   aws

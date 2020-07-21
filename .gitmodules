@@ -34,6 +34,3 @@
 [submodule "vim-polyglot"]
   path = "vim/.vim/plugged/vim-polyglot"
   url = "https://github.com/sheerun/vim-polyglot.git"
-[submodule "LanguageClient"]
-  path = "vim/.vim/plugged/LanguageClient-neovim"
-  url = "https://github.com/autozimu/LanguageClient-neovim.git"

@@ -242,3 +242,6 @@ vnoremap K :m '<-2<CR>gv=gv
 " Set colorcolumn
 set colorcolumn=120
 highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+" Fucking bullshit which doest not lemme exit Vim
+autocmd FileType netrw setl bufhidden=delete

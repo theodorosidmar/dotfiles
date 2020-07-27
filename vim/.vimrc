@@ -70,6 +70,7 @@ nnoremap <Leader>ps :Rg<SPACE>
 if executable('rg')
   let g:rg_derive_root='true'
 endif
+nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-fugitive

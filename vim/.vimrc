@@ -68,7 +68,7 @@ nnoremap <C-p> :GFiles<CR>
 nnoremap <Leader>pf :Files<CR>
 nnoremap <Leader>ps :Rg<SPACE>
 if executable('rg')
-    let g:rg_derive_root='true'
+  let g:rg_derive_root='true'
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

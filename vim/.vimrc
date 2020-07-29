@@ -206,8 +206,8 @@ set showcmd
 " Indent with two spaces
 set expandtab
 set smarttab
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 
 " Splits and tabbed files
 set splitright splitbelow

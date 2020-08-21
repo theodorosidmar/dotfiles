@@ -76,7 +76,6 @@ nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
 " => vim-fugitive
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <leader>gs :G<CR>
-nmap <leader>gc :Gcommit<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc.nvim

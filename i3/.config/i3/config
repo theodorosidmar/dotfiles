@@ -166,6 +166,7 @@ mode "resize" {
 smart_gaps on
 gaps inner 8
 gaps outer 2
+for_window [class=".*"] border pixel 5
 
 # betterlockscreen
 bindsym $mod+Shift+x exec betterlockscreen -l blur u ~/.wallpapers

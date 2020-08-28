@@ -13,6 +13,7 @@ system=(
   betterlockscreen
   wallpapers
   xinitrc
+  xbindkeys
   xresources
 )
 
@@ -28,6 +29,8 @@ echo ""
 
 git submodule init
 git submodule update
+
+xbindkeys --poll-rc
 
 for app in ${apps[@]}; do
   stow -vRt ${HOME} $app

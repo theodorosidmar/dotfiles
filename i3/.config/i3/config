@@ -23,7 +23,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -169,7 +169,3 @@ gaps outer 2
 # betterlockscreen
 bindsym $mod+Shift+x exec betterlockscreen -l blur u ~/.wallpapers
 exec --no-startup-id betterlockscreen -w dim u ~/.wallpapers
-
-bar {
-    status_command i3status
-}

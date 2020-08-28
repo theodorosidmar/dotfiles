@@ -21,6 +21,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
+alias vim='nvim'
 alias dis='docker images'
 alias dps='docker ps'
 alias dpsa='docker ps -a'

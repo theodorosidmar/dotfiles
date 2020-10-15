@@ -34,6 +34,7 @@ alias drmiu='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
 alias ave='aws-vault exec'
 alias avde='aws-vault --debug exec'
 alias avl='aws-vault login'
+alias tf='terraform'
 
 # Variables
 export WORKSPACE=$HOME/workspace

@@ -184,8 +184,14 @@ set encoding=UTF-8
 " Show line numbers
 set number relativenumber
 
-" Auto indent
-set autoindent
+" Smart indent
+set smartindent
+
+" Do not keep search text highlighted
+set nohlsearch
+
+" Scrolls up & down when there are 8 lines remaining above or below
+set scrolloff=8
 
 " Show a · in white spaces
 set listchars=space:·

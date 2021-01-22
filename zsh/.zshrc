@@ -21,6 +21,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
+alias vi='nvim'
 alias vim='nvim'
 alias dis='docker images'
 alias dps='docker ps'
@@ -52,9 +53,6 @@ export NVM_DIR="$HOME/.nvm"
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 . $HOME/.asdf/plugins/java/set-java-home.zsh
-
-# tfenv
-export PATH="$HOME/.tfenv/bin:$PATH"
 
 # tabtab source for packages
 # uninstall by removing these lines

@@ -27,9 +27,6 @@ apps=( "${base[@]}" "${system[@]}" "${code[@]}" )
 echo "Stowing apps for user: ${whoami}"
 echo ""
 
-git submodule init
-git submodule update
-
 xbindkeys --poll-rc
 
 for app in ${apps[@]}; do

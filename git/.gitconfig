@@ -29,6 +29,6 @@
   # the usual default is to push all branches
   default = upstream
 [init]
-	defaultBranch = main
+  defaultBranch = main
 [pull]
-	ff = only
+  ff = only

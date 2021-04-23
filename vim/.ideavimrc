@@ -11,8 +11,6 @@ set clipboard=unnamedplus,unnamed
 
 " jk leaves insert mode
 inoremap jk <ESC>
-" ,. leaves visual mode
-vnoremap ,. <Esc>
 
 " J & K moves text selected up and down in visual mode
 vnoremap J :m '>+1<CR>gv=gv
@@ -27,7 +25,11 @@ nnoremap <C-l> <C-w>l
 " Code navigation
 nnoremap <leader>sp :sp<space>
 nnoremap <leader>vs :vs<space>
+nmap <C-f> :action SelectInProjectView<cr>
+nmap <C-w>o :action CloseAllEditorsButActive<cr>
+nmap <leader>rr :action RenameElement<cr>
 nmap <leader>gd :action GotoDeclaration<cr>
+nmap <leader>gi :action GotoImplementation<cr>
 nmap <leader>gr :action ShowUsages<cr>
 nmap <leader>b :action Back<cr>
 nmap <leader>f :action Forward<cr>

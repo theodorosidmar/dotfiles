@@ -13,12 +13,15 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-fugitive'
 
+" Statusline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 " Colorschemes
+Plug 'ayu-theme/ayu-vim'
 Plug 'gruvbox-community/gruvbox'
 Plug 'sheerun/vim-polyglot'
 call plug#end()
-
-let g:netrw_dirhistmax = 0
 
 inoremap jk <ESC>
 map <C-n> :vnew<CR>

@@ -8,6 +8,7 @@ base=(
 
 system=(
   i3
+  rofi
   polybar
   picom
   fonts

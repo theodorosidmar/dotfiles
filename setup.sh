@@ -9,6 +9,7 @@ base=(
 system=(
   i3
   polybar
+  picom
   fonts
   betterlockscreen
   wallpapers

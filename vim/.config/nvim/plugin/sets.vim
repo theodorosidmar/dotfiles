@@ -1,3 +1,4 @@
+set nu rnu
 set exrc
 set nohlsearch incsearch
 set hidden

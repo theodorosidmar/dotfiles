@@ -12,5 +12,13 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 
-lua require'lspconfig'.tsserver.setup{ on_attach=require'completion'.on_attach }
-lua require'lspconfig'.kotlin_language_server.setup{ on_attach = require'completion'.on_attach }
+lua << EOF
+  local nvim_lsp = require('lspconfig')
+  local completion_on_attach = require'completion'.on_attach
+
+  nvim_lsp.tsserver.setup { on_attach = completion_on_attach }
+  nvim_lsp.kotlin_language_server.setup {
+    on_attach = completion_on_attach,
+    cmd = { '/home/theodorosidmar/.kotlin/kotlin-language-server/server/build/install/server/bin/kotlin-language-server' },
+  }
+EOF

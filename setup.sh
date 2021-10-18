@@ -29,8 +29,6 @@ apps=( "${base[@]}" "${system[@]}" "${code[@]}" )
 echo "Stowing apps for user: ${whoami}"
 echo ""
 
-xbindkeys --poll-rc
-
 for app in ${apps[@]}; do
   stow -vRt ${HOME} $app
 done

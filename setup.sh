@@ -33,6 +33,9 @@ for app in ${apps[@]}; do
   stow -vRt ${HOME} $app
 done
 
+git submodule init
+git submodule update
+
 echo ""
 echo "Stowed some apps."
 

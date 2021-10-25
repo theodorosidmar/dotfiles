@@ -1,15 +1,63 @@
-[submodule "nvim-tree-sitter"]
-	path = vim/.vim/plugged/nvim-treesitter
-	url = https://github.com/nvim-treesitter/nvim-treesitter
-[submodule "vim-fugitive"]
-	path = vim/.vim/plugged/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive
-[submodule "nvm-lspconfig"]
+[submodule "ayu-vim"]
+	path = vim/.vim/plugged/ayu-vim
+	url = https://github.com/ayu-theme/ayu-vim
+[submodule "cmp-buffer"]
+	path = vim/.vim/plugged/cmp-buffer
+	url = https://github.com/hrsh7th/cmp-buffer
+[submodule "cmp-nvim-lsp"]
+	path = vim/.vim/plugged/cmp-nvim-lsp
+	url = https://github.com/hrsh7th/cmp-nvim-lsp
+[submodule "cmp-nvim-lua"]
+	path = vim/.vim/plugged/cmp-nvim-lua
+	url = https://github.com/hrsh7th/cmp-nvim-lua
+[submodule "cmp-path"]
+	path = vim/.vim/plugged/cmp-path
+	url = https://github.com/hrsh7th/cmp-path
+[submodule "gruvbox"]
+	path = vim/.vim/plugged/gruvbox
+	url = https://github.com/gruvbox-community/gruvbox
+[submodule "lspkind-nvim"]
+	path = vim/.vim/plugged/lspkind-nvim
+	url = https://github.com/onsails/lspkind-nvim
+[submodule "luasnip"]
+	path = vim/.vim/plugged/LuaSnip
+	url = https://github.com/L3MOND4D3/LuaSnip
+[submodule "nerdcommenter"]
+	path = vim/.vim/plugged/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
+[submodule "nerdtree"]
+	path = vim/.vim/plugged/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "nvim-cmp"]
+	path = vim/.vim/plugged/nvim-cmp
+	url = https://github.com/hrsh7th/nvim-cmp
+[submodule "nvim-lspconfig"]
 	path = vim/.vim/plugged/nvim-lspconfig
 	url = https://github.com/neovim/nvim-lspconfig
+[submodule "nvim-treesitter"]
+	path = vim/.vim/plugged/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter
 [submodule "plenary.nvim"]
 	path = vim/.vim/plugged/plenary.nvim
 	url = https://github.com/nvim-lua/plenary.vim
+[submodule "popup.nvim"]
+	path = vim/.vim/plugged/popup.nvim
+	url = https://github.com/nvim-lua/popup.nvim
+[submodule "telescope-fzy-native.nvim"]
+	path = vim/.vim/plugged/telescope-fzy-native.nvim
+	url = https://github.com/nvim-telescope/telescope-fzy-native.nvim
 [submodule "telescope.nvim"]
 	path = vim/.vim/plugged/telescope.nvim
 	url = https://github.com/nvim-telescope/telescope.vim
+[submodule "vim-airline"]
+	path = vim/.vim/plugged/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "vim-airline-themes"]
+	path = vim/.vim/plugged/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "vim-fugitive"]
+	path = vim/.vim/plugged/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim-polyglot"]
+	path = vim/.vim/plugged/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot

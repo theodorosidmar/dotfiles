@@ -3,6 +3,7 @@ let mapleader = " "
 call plug#begin('~/.vim/plugged')
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': 'TSUpdate' }
 
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
@@ -47,3 +48,6 @@ augroup before_write
   autocmd!
   autocmd BufWritePre * :call TrimWhitespace()
 augroup END
+
+" Treesitter
+lua require'nvim-treesitter.configs'.setup { indent = { enable = true }, highlight = { enable = true }, incremental_selection = { enable = true }, textobjects = { enable = true }}

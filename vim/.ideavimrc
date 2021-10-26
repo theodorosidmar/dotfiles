@@ -28,6 +28,7 @@ nnoremap <leader>vs :vs<space>
 nmap <C-f> :action SelectInProjectView<cr>
 nmap <C-w>o :action CloseAllEditorsButActive<cr>
 nmap <leader>ps :action FindInPath<cr>
+nmap <C-b> :action ActivateProjectToolWindow<cr>
 nmap <leader>rr :action RenameElement<cr>
 nmap <leader>gd :action GotoDeclaration<cr>
 nmap <leader>gi :action GotoImplementation<cr>

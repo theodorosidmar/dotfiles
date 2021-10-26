@@ -30,10 +30,11 @@ nmap <C-w>o :action CloseAllEditorsButActive<cr>
 nmap <leader>ps :action FindInPath<cr>
 nmap <C-b> :action ActivateProjectToolWindow<cr>
 nmap <leader>rr :action RenameElement<cr>
+nmap <leader>pc :action GotoClass<cr>
 nmap <leader>gd :action GotoDeclaration<cr>
 nmap <leader>gi :action GotoImplementation<cr>
+nmap <leader>pf :action GotoFile<cr>
 nmap <leader>gr :action ShowUsages<cr>
 nmap <leader>b :action Back<cr>
 nmap <leader>f :action Forward<cr>
-nmap <leader>c :action GotoClass<cr>
 nmap == :action ReformatCode<cr>

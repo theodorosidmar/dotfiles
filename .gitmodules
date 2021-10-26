@@ -1,3 +1,9 @@
+[submodule "ohmyzsh-autosuggestions"]
+	path = ohmyzsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "ohmyzsh-syntax-highlighting"]
+	path = ohmyzsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
 [submodule "ayu-vim"]
 	path = vim/.vim/plugged/ayu-vim
 	url = https://github.com/ayu-theme/ayu-vim

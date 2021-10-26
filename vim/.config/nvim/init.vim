@@ -25,9 +25,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Colorschemes
-Plug 'ayu-theme/ayu-vim'
 Plug 'gruvbox-community/gruvbox'
-Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 inoremap jk <ESC>

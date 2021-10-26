@@ -9,15 +9,6 @@ endif
 let g:gruvbox_invert_selection='0'
 
 set termguicolors     " enable true colors support
-let ayucolor="light"  " for light version of theme
-let ayucolor="mirage" " for mirage version of theme
-let ayucolor="dark"   " for dark version of theme
-"colorscheme ayu
-let g:netrw_dirhistmax = 0
-let g:indentLine_char = ''
-let g:indentLine_first_char = ''
-let g:indentLine_showFirstIndentLevel = 1
-let g:indentLine_setColors = 0
 
 " air-line
 let g:airline_powerline_fonts = 1

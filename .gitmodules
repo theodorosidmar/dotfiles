@@ -4,9 +4,6 @@
 [submodule "ohmyzsh-syntax-highlighting"]
 	path = ohmyzsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
-[submodule "ayu-vim"]
-	path = vim/.vim/plugged/ayu-vim
-	url = https://github.com/ayu-theme/ayu-vim
 [submodule "cmp-buffer"]
 	path = vim/.vim/plugged/cmp-buffer
 	url = https://github.com/hrsh7th/cmp-buffer
@@ -64,6 +61,3 @@
 [submodule "vim-fugitive"]
 	path = vim/.vim/plugged/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
-[submodule "vim-polyglot"]
-	path = vim/.vim/plugged/vim-polyglot
-	url = https://github.com/sheerun/vim-polyglot

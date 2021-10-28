@@ -172,3 +172,6 @@ for_window [class=".*"] border pixel 5
 # betterlockscreen
 bindsym $mod+Shift+x exec betterlockscreen -l blur u ~/.wallpapers
 exec --no-startup-id betterlockscreen -w dim u ~/.wallpapers
+
+# keyboard
+exec setxkbmap -layout us,us -variant intl,

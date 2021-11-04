@@ -33,6 +33,7 @@ nmap <leader>rr :action RenameElement<cr>
 nmap <leader>pc :action GotoClass<cr>
 nmap <leader>gd :action GotoDeclaration<cr>
 nmap <leader>gi :action GotoImplementation<cr>
+nmap <leader>gm :action FileStructurePopup<cr>
 nmap <leader>pf :action GotoFile<cr>
 nmap <leader>gr :action ShowUsages<cr>
 nmap <leader>b :action Back<cr>

@@ -175,3 +175,7 @@ exec --no-startup-id betterlockscreen -w dim u ~/.wallpapers
 
 # keyboard
 exec setxkbmap -layout us,us -variant ,intl
+
+workspace 1 output HDMI-1
+workspace 2 output DP-2
+workspace 3 output DP-0

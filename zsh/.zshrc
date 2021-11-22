@@ -37,6 +37,7 @@ alias avde='aws-vault --debug exec'
 alias avl='aws-vault login'
 alias tf='terraform'
 alias abnt='setxkbmap -model abnt2 -layout br -variant ,abnt2'
+alias path='tr ":" "\n" <<< "$PATH"'
 
 # Variables
 export WORKSPACE=$HOME/workspace

@@ -42,6 +42,7 @@ alias path='tr ":" "\n" <<< "$PATH"'
 # Variables
 export WORKSPACE=$HOME/workspace
 export DOTFILES=$HOME/dotfiles
+export GOPATH=$HOME/go
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

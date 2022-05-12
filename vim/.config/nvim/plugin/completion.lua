@@ -70,3 +70,4 @@ require'lspconfig'.tsserver.setup(config())
 require'lspconfig'.kotlin_language_server.setup(config({
   cmd = { '/home/theodorosidmar/.kotlin/kotlin-language-server/server/build/install/server/bin/kotlin-language-server' }
 }))
+require'lspconfig'.gopls.setup(config())

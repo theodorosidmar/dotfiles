@@ -12,6 +12,7 @@ plugins=(
   node
   npm
   gradle
+  mvn
   aws
   zsh-autosuggestions
   zsh-syntax-highlighting

@@ -66,10 +66,15 @@ local function config(_config)
     }, _config or {})
 end
 
+-- TypeScript
 require'lspconfig'.tsserver.setup(config())
+
+-- Kotlin
 require'lspconfig'.kotlin_language_server.setup(config({
   cmd = { '/home/theodorosidmar/.kotlin/kotlin-language-server/server/build/install/server/bin/kotlin-language-server' }
 }))
+
+-- Golang
 require'lspconfig'.gopls.setup(config({
   cmd = { "gopls", "serve" },
   settings = {

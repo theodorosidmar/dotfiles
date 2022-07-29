@@ -170,8 +170,8 @@ gaps bottom 45
 for_window [class=".*"] border pixel 5
 
 # betterlockscreen
-bindsym $mod+Shift+x exec betterlockscreen -l blur u ~/.wallpapers
-exec --no-startup-id betterlockscreen -w dim u ~/.wallpapers
+exec --no-startup-id betterlockscreen -u ~/.wallpapers -w dim
+bindsym $mod+Shift+x exec betterlockscreen -l blur
 
 # keyboard
 exec setxkbmap -layout us,us -variant ,intl

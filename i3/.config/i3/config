@@ -175,6 +175,7 @@ bindsym $mod+Shift+x exec betterlockscreen -l blur
 
 # keyboard
 exec setxkbmap -layout us,us -variant ,intl
+bindsym $mod+p exec "xkb-switch --next"
 
 workspace 1 output DP-0
 workspace 2 output DP-2

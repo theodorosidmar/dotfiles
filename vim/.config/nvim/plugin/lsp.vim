@@ -7,5 +7,6 @@ nnoremap <silent>K :lua vim.lsp.buf.hover()<CR>
 inoremap <C-h> <cmd>lua vim.lsp.buf.signature_help()<CR>
 nnoremap <leader>gn :lua vim.diagnostic.goto_next()<CR>
 nnoremap <leader>gp :lua vim.diagnostic.goto_prev()<CR>
+nnoremap <leader>aa :lua vim.lsp.buf.code_action()<CR>
 
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']

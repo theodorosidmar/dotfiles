@@ -26,6 +26,7 @@ Plug 'vim-airline/vim-airline-themes'
 
 " Colorschemes
 Plug 'gruvbox-community/gruvbox'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'sheerun/vim-polyglot'
 call plug#end()
 

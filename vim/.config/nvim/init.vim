@@ -42,6 +42,8 @@ nnoremap <silent> <C-Up> :resize +3<CR>
 nnoremap <silent> <C-Down> :resize -3<CR>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
+nnoremap <leader>cn :cnext<CR>
+nnoremap <leader>cp :cprev<CR>
 
 fun! TrimWhitespace()
   let l:save = winsaveview()

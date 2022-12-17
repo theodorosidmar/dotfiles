@@ -49,4 +49,6 @@ return require('packer').startup(function(use)
 
     use('preservim/nerdtree')
     use('preservim/nerdcommenter')
+
+    use('nvim-lualine/lualine.nvim')
 end)

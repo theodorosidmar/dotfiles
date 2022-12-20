@@ -33,11 +33,15 @@ lsp.setup_nvim_cmp({
 
 lsp.set_preferences({
     suggest_lsp_servers = true,
+    setup_servers_on_start = true,
+    cmp_capabilities = true,
+    call_servers = 'local',
+    set_lsp_keymaps = false,
     sign_icons = {
-        error = 'E',
-        warn = 'W',
-        hint = 'H',
-        info = 'I'
+        error = '✘',
+        warn = '▲',
+        hint = '⚑',
+        info = ''
     }
 })
 
@@ -46,13 +50,12 @@ vim.diagnostic.config({
 })
 
 lsp.on_attach(function(client, bufnr)
-    local opts = {buffer = bufnr, remap = false}
-
     if client.name == "eslint" then
         vim.cmd.LspStop('eslint')
         return
     end
 
+    local opts = {buffer = bufnr, remap = false}
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
     vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
     vim.keymap.set("n", "<leader>vws", vim.lsp.buf.workspace_symbol, opts)

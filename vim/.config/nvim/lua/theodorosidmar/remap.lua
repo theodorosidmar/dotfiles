@@ -13,6 +13,8 @@ vim.keymap.set('n', '<C-l>', '<C-w>l')
 
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+vim.keymap.set('n', '<C-Left>', ':vertical resize +3<CR>', { silent = true })
+vim.keymap.set('n', '<C-Right>', ':vertical resize -3<CR>', { silent = true })
 
 vim.keymap.set('n', '<C-w>k', '<cmd>cnext<CR>zz')
 vim.keymap.set('n', '<C-w>j', '<cmd>cprev<CR>zz')

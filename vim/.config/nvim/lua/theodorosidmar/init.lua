@@ -1,3 +1,4 @@
+require('theodorosidmar.packer')
 require("theodorosidmar.set")
 require("theodorosidmar.remap")
 

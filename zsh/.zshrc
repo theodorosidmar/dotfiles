@@ -14,6 +14,7 @@ plugins=(
   gradle
   mvn
   aws
+  kubectl
   zsh-autosuggestions
   zsh-syntax-highlighting
 )

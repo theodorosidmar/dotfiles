@@ -179,3 +179,4 @@ bindsym $mod+p exec "xkb-switch --next"
 
 workspace 1 output DP-0
 workspace 2 output DP-2
+workspace 3 output HDMI-0

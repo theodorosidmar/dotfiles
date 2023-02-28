@@ -2,7 +2,6 @@
 
 base=(
   zsh
-  ohmyzsh
   git
 )
 

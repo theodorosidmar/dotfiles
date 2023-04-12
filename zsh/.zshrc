@@ -45,6 +45,7 @@ alias path='tr ":" "\n" <<< "$PATH"'
 export WORKSPACE=$HOME/workspace
 export DOTFILES=$HOME/dotfiles
 export GOPATH=$HOME/go
+export VI_MODE_SET_CURSOR=true
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

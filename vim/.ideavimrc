@@ -38,4 +38,5 @@ nmap <leader>pf :action GotoFile<cr>
 nmap <leader>gr :action ShowUsages<cr>
 nmap <leader>b :action Back<cr>
 nmap <leader>f :action Forward<cr>
+nmap <C-n> :action Kotlin.NewFile<cr>
 nmap == :action ReformatCode<cr>

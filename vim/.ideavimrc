@@ -22,6 +22,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Enables distraction free mode
+nmap <c-z> :action ToggleDistractionFreeMode<cr>
+
 " Code navigation
 nnoremap <leader>sp :sp<space>
 nnoremap <leader>vs :vs<space>
@@ -29,14 +32,28 @@ nmap <C-f> :action SelectInProjectView<cr>
 nmap <C-w>o :action CloseAllEditorsButActive<cr>
 nmap <leader>ps :action FindInPath<cr>
 nmap <C-b> :action ActivateProjectToolWindow<cr>
-nmap <leader>rn :action RenameElement<cr>
 nmap <leader>pc :action GotoClass<cr>
 nmap <leader>gd :action GotoDeclaration<cr>
 nmap <leader>gi :action GotoImplementation<cr>
 nmap <leader>gm :action FileStructurePopup<cr>
+nmap <leader>gh :action CallHierarchy<cr>
 nmap <leader>pf :action GotoFile<cr>
 nmap <leader>gr :action ShowUsages<cr>
 nmap <leader>b :action Back<cr>
 nmap <leader>f :action Forward<cr>
 nmap <C-n> :action Kotlin.NewFile<cr>
+nmap ]d :action GotoNextError<cr>
+nmap [d :action GotoPreviousError<cr>
+nmap [[ :action MethodUp<cr>
+nmap ]] :action MethodDown<cr>
+
+" Refactoring
+nmap <leader>rn :action RenameElement<cr>
 nmap == :action ReformatCode<cr>
+
+" Running and debugging
+nnoremap ,r :action ContextRun<CR>
+nnoremap ,c :action RunClass<CR>
+nnoremap ,f :action ChooseRunConfiguration<CR>
+nnoremap ,t :action ActivateRunToolWindow<CR>
+nnoremap ,u :action Rerun<CR>

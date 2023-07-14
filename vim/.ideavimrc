@@ -52,6 +52,7 @@ nmap ]] :action MethodDown<cr>
 " Refactoring
 nmap <leader>rn :action RenameElement<cr>
 nmap <leader>rp :action Refactorings.QuickListPopupAction<cr>
+nmap <leader>rm :action Move<cr>
 nmap == :action ReformatCode<cr>
 
 " Running and debugging

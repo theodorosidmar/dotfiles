@@ -39,6 +39,8 @@ nmap <leader>gm :action FileStructurePopup<cr>
 nmap <leader>gh :action CallHierarchy<cr>
 nmap <leader>pf :action GotoFile<cr>
 nmap <leader>gr :action ShowUsages<cr>
+nmap <leader>gf :action RecentFiles<cr>
+nmap <leader>gl :action RecentLocations<cr>
 nmap <leader>b :action Back<cr>
 nmap <leader>f :action Forward<cr>
 nmap <C-n> :action Kotlin.NewFile<cr>
@@ -49,6 +51,7 @@ nmap ]] :action MethodDown<cr>
 
 " Refactoring
 nmap <leader>rn :action RenameElement<cr>
+nmap <leader>rp :action Refactorings.QuickListPopupAction<cr>
 nmap == :action ReformatCode<cr>
 
 " Running and debugging

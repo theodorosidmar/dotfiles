@@ -34,7 +34,7 @@ fi
 
 xbindkeys --poll-rc
 xrandr --output DP-2 --primary --left-of DP-0
-xrandr --output HDMI-0 --left-of DP-2
+xrandr --output HDMI-1 --left-of DP-2
 xrandr --output DP-0 --rotate right
 
 exec i3

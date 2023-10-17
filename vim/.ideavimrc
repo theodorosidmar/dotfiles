@@ -35,6 +35,7 @@ nmap <C-b> :action ActivateProjectToolWindow<cr>
 nmap <leader>pc :action GotoClass<cr>
 nmap <leader>gd :action GotoDeclaration<cr>
 nmap <leader>gi :action GotoImplementation<cr>
+nmap <leader>gsm :action GotoSuperMethod<cr>
 nmap <leader>gm :action FileStructurePopup<cr>
 nmap <leader>gh :action CallHierarchy<cr>
 nmap <leader>pf :action GotoFile<cr>

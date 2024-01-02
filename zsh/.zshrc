@@ -8,6 +8,7 @@ plugins=(
   vi-mode
   git
   docker
+  docker-compose
   node
   npm
   gradle

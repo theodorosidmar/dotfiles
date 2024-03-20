@@ -15,6 +15,7 @@ plugins=(
   mvn
   aws
   kubectl
+  kubectx
   terraform
   zsh-autosuggestions
   zsh-syntax-highlighting

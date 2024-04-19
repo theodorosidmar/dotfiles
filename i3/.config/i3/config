@@ -38,6 +38,7 @@ bindsym $mod+Shift+q kill
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run -i -nb '#292d3e' -nf '#bbc5ff' -sb '#82AAFF' -sf '#292d3e' -fn 'UbuntuMono Nerd Font:bold:pixelsize=14'
 bindsym $mod+d exec rofi -show run
+bindsym $mod+Shift+d exec rofi -modi window -show window -hide-scrollbar -padding 20 -line-padding 4 -width 40 -lines 6
 
 # change focus
 bindsym $mod+h focus left

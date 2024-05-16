@@ -1,8 +1,12 @@
 live_config_reload = true
 
 # Fonts
+[font]
+size = 16.0
+
 [font.normal]
-family = "JetBrains Mono"
+family = "JetBrainsMono"
+style = "Bold"
 
 # Dracula theme for Alacritty
 # https://draculatheme.com/alacritty

@@ -170,10 +170,6 @@ gaps outer 2
 gaps bottom 45
 for_window [class=".*"] border pixel 5
 
-# betterlockscreen
-exec --no-startup-id betterlockscreen -u ~/.wallpapers -w dim
-bindsym $mod+Shift+x exec betterlockscreen -l blur
-
 # keyboard
 exec setxkbmap -layout us,us -variant ,intl
 bindsym $mod+p exec "xkb-switch --next"

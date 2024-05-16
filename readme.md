@@ -14,4 +14,3 @@ So, I love organizing my stuffs on my way. Here I try to demonstrate it a little
 6. [stow](https://www.gnu.org/software/stow/) for dotfiles symlinks
 7. [rofi](https://github.com/davatorium/rofi) & [dmenu](https://wiki.archlinux.org/index.php/Dmenu) as window switchers & runners
 8. [Alacritty](https://github.com/alacritty/alacritty) as terminal
-9. [Betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) as background wallpaper manager & locksreen

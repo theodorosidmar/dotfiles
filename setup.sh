@@ -11,7 +11,6 @@ system=(
   polybar
   picom
   fonts
-  betterlockscreen
   wallpapers
   xinitrc
   xbindkeys

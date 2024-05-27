@@ -91,6 +91,8 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 -- Resize windows with CTRL+arrow left/right
 vim.keymap.set('n', '<C-Left>', ':vertical resize +3<CR>', { silent = true })
 vim.keymap.set('n', '<C-Right>', ':vertical resize -3<CR>', { silent = true })
+vim.keymap.set('n', '<C-Up>', ':horizontal resize +3<CR>', { silent = true })
+vim.keymap.set('n', '<C-Down>', ':horizontal resize -3<CR>', { silent = true })
 
 -- Walk through quick fix list with CTRL+k/j
 vim.keymap.set('n', '<C-w>k', '<cmd>cnext<CR>zz')

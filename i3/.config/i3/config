@@ -23,8 +23,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# Starts polybar, picom & background
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec --no-startup-id picom -CGb --no-use-damage
+exec --no-startup-id picom
 exec --no-startup-id feh --bg-scale ~/.wallpapers/nice-blue-background.png
 
 # Use Mouse+$mod to drag floating windows to their wanted position

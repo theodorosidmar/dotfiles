@@ -169,10 +169,10 @@ mode "resize" {
 }
 
 # i3-gaps
-gaps inner 8
-gaps outer 2
-gaps bottom 45
-for_window [class=".*"] border pixel 5
+gaps inner 0
+gaps outer 0
+gaps bottom 40
+for_window [class=".*"] border pixel 3
 
 # keyboard
 exec setxkbmap -layout us,us -variant ,intl

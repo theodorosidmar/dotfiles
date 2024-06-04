@@ -68,3 +68,6 @@ export VI_MODE_SET_CURSOR=true
 
 # Golang
 export PATH=$PATH:$GOPATH/bin
+
+# zoxide
+eval "$(zoxide init zsh)"

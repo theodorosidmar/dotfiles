@@ -28,6 +28,7 @@ pcall(require('telescope').load_extension, 'fzf')
 pcall(require('telescope').load_extension, 'ui-select')
 pcall(require('telescope').load_extension, 'file_browser')
 pcall(require('telescope').load_extension, 'refactoring')
+pcall(require('telescope').load_extension, 'zoxide')
 
 -- See `:help telescope.builtin`
 local builtin = require 'telescope.builtin'

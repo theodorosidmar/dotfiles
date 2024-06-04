@@ -34,14 +34,14 @@ return {
       }
 
       -- Eval var under cursor
-      vim.keymap.set('n', '<space>?', function()
+      vim.keymap.set('n', '<leader>?', function()
         require('dapui').eval(nil, { enter = true })
       end)
-      vim.keymap.set('n', '<space>b', dap.toggle_breakpoint)
-      vim.keymap.set('n', '<space>gb', dap.run_to_cursor)
+      vim.keymap.set('n', '<leader>b', dap.toggle_breakpoint)
+      vim.keymap.set('n', '<leader>gb', dap.run_to_cursor)
+      vim.keymap.set('n', '<F5>', dap.step_out)
       vim.keymap.set('n', '<F6>', dap.step_back)
       vim.keymap.set('n', '<F7>', dap.step_into)
-      vim.keymap.set('n', '<S-F8>', dap.step_out)
       vim.keymap.set('n', '<F8>', dap.step_over)
       vim.keymap.set('n', '<F9>', dap.continue)
       vim.keymap.set('n', '<F10>', dap.restart)

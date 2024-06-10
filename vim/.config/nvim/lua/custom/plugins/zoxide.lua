@@ -7,7 +7,7 @@ return {
       'nvim-telescope/telescope.nvim',
     },
     config = function()
-      vim.keymap.set('n', '<leader>Z', require('telescope').extensions.zoxide.list)
+      vim.keymap.set('n', '<leader>Z', require('telescope').extensions.zoxide.list, { desc = '[Z]oxide' })
     end,
   },
 }

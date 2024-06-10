@@ -48,7 +48,6 @@ alias path='tr ":" "\n" <<< "$PATH"'
 # Variables
 export WORKSPACE=$HOME/workspace
 export DOTFILES=$HOME/dotfiles
-export GOPATH=$HOME/go
 export VI_MODE_SET_CURSOR=true
 
 # fzf
@@ -65,9 +64,6 @@ export VI_MODE_SET_CURSOR=true
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Golang
-export PATH=$PATH:$GOPATH/bin
 
 # zoxide
 eval "$(zoxide init zsh)"

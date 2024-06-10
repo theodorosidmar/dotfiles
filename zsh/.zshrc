@@ -1,8 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-# Theme
-ZSH_THEME="powerlevel10k/powerlevel10k"
-
 # Plugins
 plugins=(
   vi-mode
@@ -62,8 +59,8 @@ export VI_MODE_SET_CURSOR=true
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # zoxide
 eval "$(zoxide init zsh)"
+
+# oh-my-posh
+eval "$(oh-my-posh init zsh)"

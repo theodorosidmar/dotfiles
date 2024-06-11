@@ -63,4 +63,4 @@ export VI_MODE_SET_CURSOR=true
 eval "$(zoxide init zsh)"
 
 # oh-my-posh
-eval "$(oh-my-posh init zsh)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/config.toml)"

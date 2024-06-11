@@ -3,6 +3,7 @@
 base=(
   zsh
   git
+  ohmyposh
 )
 
 system=(

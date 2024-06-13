@@ -1,5 +1,3 @@
-export ZSH="$HOME/.oh-my-zsh"
-
 # Plugins
 plugins=(
   vi-mode
@@ -18,8 +16,9 @@ plugins=(
   zsh-syntax-highlighting
 )
 
-# Source
+# oh my zsh
 source $ZSH/oh-my-zsh.sh
+HISTFILE=$ZDOTDIR/.zsh_history
 
 # Aliases
 alias vi='nvim'
@@ -41,11 +40,6 @@ alias avls='aws-vault ls'
 alias tf='terraform'
 alias abnt='setxkbmap -model abnt2 -layout br -variant ,abnt2'
 alias path='tr ":" "\n" <<< "$PATH"'
-
-# Variables
-export WORKSPACE=$HOME/workspace
-export DOTFILES=$HOME/dotfiles
-export VI_MODE_SET_CURSOR=true
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

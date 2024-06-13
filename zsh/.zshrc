@@ -55,10 +55,6 @@ export VI_MODE_SET_CURSOR=true
 . $HOME/.asdf/completions/asdf.bash
 . $HOME/.asdf/plugins/java/set-java-home.zsh
 
-# tabtab source for packages
-# uninstall by removing these lines
-[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
-
 # zoxide
 eval "$(zoxide init zsh)"
 

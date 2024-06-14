@@ -57,3 +57,7 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/config.toml)"
 
 # include hidden files
 _comp_options+=(globdots)
+
+# Edit line in vim with ctrl-e
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line

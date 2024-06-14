@@ -21,25 +21,7 @@ source $ZSH/oh-my-zsh.sh
 HISTFILE=$ZDOTDIR/.zsh_history
 
 # Aliases
-alias vi='nvim'
-alias vim='nvim'
-alias dis='docker images'
-alias dps='docker container ls --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}"'
-alias dpsa='docker container ls --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}" -a'
-alias gbv='git branch -v'
-alias ll='ls -lGah'
-alias dcu='docker-compose up'
-alias dcd='docker-compose down'
-alias dcub='docker-compose up --build'
-alias drmiu='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
-alias ave='aws-vault exec'
-alias avde='aws-vault --debug exec'
-alias avl='aws-vault login'
-alias avu='unset AWS_VAULT'
-alias avls='aws-vault ls'
-alias tf='terraform'
-alias abnt='setxkbmap -model abnt2 -layout br -variant ,abnt2'
-alias path='tr ":" "\n" <<< "$PATH"'
+source $ZDOTDIR/aliasrc
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

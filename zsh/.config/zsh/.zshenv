@@ -9,7 +9,10 @@ ZSH="$HOME/.oh-my-zsh"
 # Editor
 EDITOR=nvim
 
-# Some variables
+# paths
 WORKSPACE=$HOME/workspace
 DOTFILES=$HOME/dotfiles
+
+# vim
 VI_MODE_SET_CURSOR=true
+KEYTIMEOUT=1

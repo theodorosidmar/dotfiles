@@ -1,0 +1,37 @@
+# !/bin/sh
+
+# editor
+alias \
+    v='nvim' \
+    vi='nvim' \
+    vim='nvim'
+
+# docker
+alias \
+    dis='docker images' \
+    dps='docker container ls --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}"' \
+    dpsa='docker container ls --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}" -a' \
+    dcu='docker-compose up' \
+    dcd='docker-compose down' \
+    dcub='docker-compose up --build' \
+    drmiu='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
+
+# aws vault 
+alias \
+    ave='aws-vault exec' \
+    avde='aws-vault --debug exec' \
+    avl='aws-vault login' \
+    avu='unset AWS_VAULT' \
+    avls='aws-vault ls'
+
+# git
+alias gbv='git branch -v'
+
+# linux commands
+alias ll='ls -lGah'
+
+# terraform
+alias tf='terraform'
+
+# path
+alias path='tr ":" "\n" <<< "$PATH"'

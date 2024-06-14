@@ -13,9 +13,7 @@ system=(
   picom
   fonts
   wallpapers
-  xinitrc
-  xbindkeys
-  xresources
+  x
 )
 
 code=(
@@ -37,4 +35,3 @@ git submodule update
 
 echo ""
 echo "Stowed some apps."
-

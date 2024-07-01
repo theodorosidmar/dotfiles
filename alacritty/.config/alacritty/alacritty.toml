@@ -9,7 +9,7 @@ import = [
 size = 14.0
 
 [font.normal]
-family = "JetBrainsMono"
+family = "JetBrainsMono Nerd Font"
 style = "Bold"
 
 [env]

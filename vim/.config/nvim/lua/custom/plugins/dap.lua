@@ -31,6 +31,12 @@ return {
           processId = require('dap.utils').pick_process,
           cwd = '${workspaceFolder}',
         },
+        {
+          type = 'pwa-node',
+          request = 'attach',
+          name = 'Auto Attach',
+          cwd = vim.fn.getcwd(),
+        },
       }
 
       -- Eval var under cursor

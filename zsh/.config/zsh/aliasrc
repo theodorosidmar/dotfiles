@@ -11,13 +11,15 @@ alias \
     dis='docker images' \
     dps='docker container ls --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}"' \
     dpsa='docker container ls --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}" -a' \
+    drmiu='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")' \
+    dcmp='docker-compose' \
     dcu='docker-compose up' \
     dcd='docker-compose down' \
-    dcub='docker-compose up --build' \
-    drmiu='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
+    dcub='docker-compose up --build'
 
 # aws vault 
 alias \
+    av='aws-vault' \
     ave='aws-vault exec' \
     avde='aws-vault --debug exec' \
     avl='aws-vault login' \

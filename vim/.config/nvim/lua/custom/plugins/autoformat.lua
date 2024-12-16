@@ -1,6 +1,8 @@
 return { -- Autoformat
   'stevearc/conform.nvim',
   lazy = false,
+  event = { 'BufWritePre' },
+  cmd = { 'ConformInfo' },
   keys = {
     {
       '<leader>f',
@@ -15,9 +17,15 @@ return { -- Autoformat
     notify_on_error = false,
     format_on_save = function(bufnr)
       local disable_filetypes = { typescript = true }
+      local lsp_format_opt
+      if disable_filetypes[vim.bo[bufnr].filetype] then
+        lsp_format_opt = 'never'
+      else
+        lsp_format_opt = 'fallback'
+      end
       return {
         timeout_ms = 500,
-        lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
+        lsp_fallback = lsp_format_opt,
       }
     end,
     formatters_by_ft = {

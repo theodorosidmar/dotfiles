@@ -1,16 +1,19 @@
 vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
 vim.opt.shortmess:append 'c'
 
-require('lspkind').init {}
-
 local cmp = require 'cmp'
 local luasnip = require 'luasnip'
+luasnip.config.setup {}
 
 cmp.setup {
-  sources = {
-    { name = 'nvim_lsp' },
-    { name = 'path' },
-    { name = 'buffer' },
+  -- Enable luasnip to handle snippet for nvim-cmp
+  snippet = {
+    expand = function(args)
+      luasnip.lsp_expand(args.body)
+    end,
+  },
+  completion = {
+    completeopt = 'menu,menuone,noinsert',
   },
   mapping = cmp.mapping.preset.insert {
     ['<C-Space>'] = cmp.mapping.complete {},
@@ -26,12 +29,12 @@ cmp.setup {
       { 'i', 'c' }
     ),
   },
-
-  -- Enable luasnip to handle snippet for nvim-cmp
-  snippet = {
-    expand = function(args)
-      luasnip.lsp_expand(args.body)
-    end,
+  sources = {
+    { name = 'lazydev', group_index = 0 },
+    { name = 'nvim_lsp' },
+    { name = 'luasnip' },
+    { name = 'path' },
+    { name = 'buffer' },
   },
 }
 

@@ -3,8 +3,9 @@ require('telescope').setup {
   --  All the info you're looking for is in `:help telescope.setup()`
   --
   defaults = {
+    layout_strategy = 'vertical',
     layout_config = {
-      horizontal = { height = 0.99, width = 0.99 },
+      prompt_position = 'top',
     },
     --   mappings = {
     --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },

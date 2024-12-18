@@ -95,19 +95,20 @@ vim.keymap.set('n', '<C-Up>', ':horizontal resize +3<CR>', { silent = true })
 vim.keymap.set('n', '<C-Down>', ':horizontal resize -3<CR>', { silent = true })
 
 -- Walk through quick fix list with CTRL+k/j
-vim.keymap.set('n', '<C-w>k', '<cmd>cnext<CR>zz')
-vim.keymap.set('n', '<C-w>j', '<cmd>cprev<CR>zz')
+vim.keymap.set('n', '<C-w>k', '<cmd>cnext<CR>zz', { desc = 'Go to the next file in the quick fix list' })
+vim.keymap.set('n', '<C-w>j', '<cmd>cprev<CR>zz', { desc = 'Go to the previous file in the quick fix list' })
 
 -- Walk through location list with CTRL+h/l
-vim.keymap.set('n', '<C-w>l', '<cmd>lnext<CR>zz')
-vim.keymap.set('n', '<C-w>h', '<cmd>lprev<CR>zz')
+vim.keymap.set('n', '<C-w>l', '<cmd>lnext<CR>zz', { desc = 'Go to the next file in the location list' })
+vim.keymap.set('n', '<C-w>h', '<cmd>lprev<CR>zz', { desc = 'Go to the previous file in the location list' })
 
 -- Join the current line with the following line with `J` in normal mode
 vim.keymap.set('n', 'J', 'mzJ`z')
 
--- I don't recall what these do. Sorry
+-- Keep the cursor in the middle of the screen while scrolling up or down
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
+-- I don't recall what these do. Sorry
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
 

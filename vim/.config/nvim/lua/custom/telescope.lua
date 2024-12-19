@@ -1,18 +1,9 @@
 require('telescope').setup {
-  -- You can put your default mappings / updates / etc. in here
-  --  All the info you're looking for is in `:help telescope.setup()`
-  --
-  defaults = require('telescope.themes').get_ivy {
-    layout_strategy = 'vertical',
-    layout_config = {
-      prompt_position = 'top',
-    },
-    --   mappings = {
-    --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-    --   },
-  },
-  -- pickers = {}
+  defaults = vim.tbl_extend('force', require('telescope.themes').get_ivy(), {}),
   extensions = {
+    ['ui-select'] = {
+      require('telescope.themes').get_dropdown {},
+    },
     ['file_browser'] = {
       -- Disables netrw and use telescope-file-browser in its place
       hijack_netrw = true,
@@ -26,6 +17,7 @@ require('telescope').setup {
 
 -- Enable telescope extensions, if they are installed
 pcall(require('telescope').load_extension, 'fzf')
+pcall(require('telescope').load_extension, 'ui-select')
 pcall(require('telescope').load_extension, 'file_browser')
 pcall(require('telescope').load_extension, 'refactoring')
 pcall(require('telescope').load_extension, 'zoxide')

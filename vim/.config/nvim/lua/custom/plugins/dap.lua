@@ -54,13 +54,19 @@ return {
       end,
       desc = 'Debug: Set Breakpoint',
     },
-    -- Toggle to see last session result. Without this, you can't see session output in case of unhandled exception.
-    {
+    { -- Toggle to see last session result. Without this, you can't see session output in case of unhandled exception.
       '<F6>',
       function()
         require('dapui').toggle()
       end,
       desc = 'Debug: See last session result.',
+    },
+    {
+      '<leader>?',
+      function()
+        require('dapui').eval(nil, { enter = true })
+      end,
+      desc = 'Debug: evaluate var under cursor',
     },
   },
   config = function()

@@ -2,7 +2,7 @@
 
 # editor
 alias \
-    v='nvim' \
+    v='nvim .' \
     vi='nvim' \
     vim='nvim'
 

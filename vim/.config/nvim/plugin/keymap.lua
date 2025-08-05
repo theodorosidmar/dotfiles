@@ -41,8 +41,8 @@ vim.keymap.set('n', '<C-Up>', ':horizontal resize +3<CR>', { silent = true })
 vim.keymap.set('n', '<C-Down>', ':horizontal resize -3<CR>', { silent = true })
 
 -- Walk through quick fix list with CTRL+k/j
-vim.keymap.set('n', '<C-w>k', '<cmd>cnext<CR>zz', { desc = 'Go to the next file in the quick fix list' })
-vim.keymap.set('n', '<C-w>j', '<cmd>cprev<CR>zz', { desc = 'Go to the previous file in the quick fix list' })
+vim.keymap.set('n', '<C-w>j', '<cmd>cnext<CR>zz', { desc = 'Go to the next file in the quick fix list' })
+vim.keymap.set('n', '<C-w>k', '<cmd>cprev<CR>zz', { desc = 'Go to the previous file in the quick fix list' })
 
 -- Walk through location list with CTRL+h/l
 vim.keymap.set('n', '<C-w>l', '<cmd>lnext<CR>zz', { desc = 'Go to the next file in the location list' })

@@ -35,7 +35,7 @@ vim.keymap.set('n', '<leader>s.', builtin.oldfiles, { desc = '[S]earch Recent Fi
 vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = '[ ] Find existing buffers' })
 
 -- Search grep using multigrep with pattern matching when using double spaces
-vim.keymap.set('n', '<leader>sg', require 'custom.telescope.multigrep', { desc = '[S]earch by [G]rep' })
+vim.keymap.set('n', '<leader>sg', require 'config.multigrep', { desc = '[S]earch by [G]rep' })
 
 -- Open file browser at project directory
 vim.keymap.set('n', '<C-b>', ':Telescope file_browser<CR>')

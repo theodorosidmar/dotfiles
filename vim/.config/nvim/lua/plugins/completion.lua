@@ -13,7 +13,7 @@ return {
       'hrsh7th/cmp-buffer',
     },
     config = function()
-      require 'custom.completion'
+      require 'custom.lsp'
     end,
   },
 }

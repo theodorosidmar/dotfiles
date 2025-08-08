@@ -1,40 +1,16 @@
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+require 'config.options'
 
-local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
-if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system {
-    'git',
-    'clone',
-    '--filter=blob:none',
-    '--branch=stable',
-    'https://github.com/folke/lazy.nvim.git',
-    lazypath,
-  }
-end
+require 'custom.lazy'
+require 'custom.telescope'
 
----@diagnostic disable-next-line: undefined-field
-vim.opt.rtp:prepend(lazypath)
-
-require('lazy').setup({ import = 'custom/plugins' }, {
-  change_detection = {
-    notify = false,
-  },
-  ui = {
-    icons = vim.g.have_nerd_font and {} or {
-      cmd = '⌘',
-      config = '🛠',
-      event = '📅',
-      ft = '📂',
-      init = '⚙',
-      keys = '🗝',
-      plugin = '🔌',
-      runtime = '💻',
-      require = '🌙',
-      source = '📄',
-      start = '🚀',
-      task = '📌',
-      lazy = '💤 ',
-    },
-  },
-})
+require 'config.highlight_yank'
+require 'config.diagnostic'
+require 'config.diagnostic_toggle'
+require 'config.filetypes'
+require 'config.floaterminal'
+require 'config.fugitive'
+require 'config.keymap'
+require 'config.menu'
+require 'config.multigrep'
+require 'config.terminal'
+require 'config.title'

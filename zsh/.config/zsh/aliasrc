@@ -14,6 +14,7 @@ alias \
     drmiu='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")' \
     dcmp='docker-compose' \
     dcu='docker-compose up' \
+    dcud='docker-compose up -d' \
     dcd='docker-compose down' \
     dcub='docker-compose up --build'
 

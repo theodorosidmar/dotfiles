@@ -16,6 +16,7 @@ alias \
     dcu='docker-compose up' \
     dcud='docker-compose up -d' \
     dcd='docker-compose down' \
+    dcdv='docker-compose down -v' \
     dcub='docker-compose up --build'
 
 # aws vault 

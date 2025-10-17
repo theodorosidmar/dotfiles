@@ -22,5 +22,11 @@ return { -- Collection of various small independent plugins/modules
     require('mini.icons').setup()
     require('mini.tabline').setup()
     require('mini.statusline').setup()
+
+    require('mini.comment').setup {
+      options = {
+        ignore_blank_line = true,
+      },
+    }
   end,
 }

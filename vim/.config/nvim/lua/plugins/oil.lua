@@ -4,6 +4,11 @@ return {
   config = function()
     require('oil').setup {
       columns = { 'icon' },
+      lsp_file_methods = {
+        enabled = true,
+        timeout_ms = 1000,
+        autosave_changes = false,
+      },
       keymaps = {
         ['<C-h>'] = false,
         ['<M-h>'] = 'actions.select_split',

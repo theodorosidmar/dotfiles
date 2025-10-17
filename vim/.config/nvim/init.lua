@@ -5,7 +5,6 @@ require 'custom.telescope'
 
 require 'config.highlight_yank'
 require 'config.diagnostic'
-require 'config.diagnostic_toggle'
 require 'config.filetypes'
 require 'config.floaterminal'
 require 'config.fugitive'

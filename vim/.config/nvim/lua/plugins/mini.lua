@@ -1,5 +1,6 @@
 return { -- Collection of various small independent plugins/modules
   'nvim-mini/mini.nvim',
+  version = '*',
   config = function()
     -- Better Around/Inside textobjects
     --
@@ -19,10 +20,12 @@ return { -- Collection of various small independent plugins/modules
     -- Pairs () [] {}
     require('mini.pairs').setup()
 
+    -- Beauty
     require('mini.icons').setup()
     require('mini.tabline').setup()
     require('mini.statusline').setup()
 
+    -- Comment
     require('mini.comment').setup {
       options = {
         ignore_blank_line = true,

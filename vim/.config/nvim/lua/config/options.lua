@@ -62,3 +62,6 @@ vim.opt.scrolloff = 10
 
 -- Wrap
 vim.opt.wrap = false
+
+-- Borders
+vim.o.winborder = 'rounded'

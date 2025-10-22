@@ -116,6 +116,13 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
     template = ' {{ .Full }} '
 
   [[blocks.segments]]
+    type = 'kotlin'
+    style = 'plain'
+    foreground = "#906cff"
+    background = "transparent"
+    template = " <b>kt</b>{{ .Full }} "
+
+  [[blocks.segments]]
     type = 'shell'
     style = 'plain'
     foreground = 'p:white'

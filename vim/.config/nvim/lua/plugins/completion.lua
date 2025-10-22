@@ -1,77 +1,68 @@
 return {
   {
-    'hrsh7th/nvim-cmp',
-    event = 'InsertEnter',
+    'saghen/blink.cmp',
     dependencies = {
-      {
-        'L3MON4D3/LuaSnip',
-        build = 'make install_jsregexp',
-      },
-      'saadparwaiz1/cmp_luasnip',
-      'hrsh7th/cmp-nvim-lsp',
-      'hrsh7th/cmp-path',
-      'hrsh7th/cmp-buffer',
+      'rafamadriz/friendly-snippets',
+      'fang2hou/blink-copilot',
     },
-    config = function()
-      vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
-      vim.opt.shortmess:append 'c'
-
-      local cmp = require 'cmp'
-      local luasnip = require 'luasnip'
-      luasnip.config.setup {}
-
-      cmp.setup {
-        -- Enable luasnip to handle snippet for nvim-cmp
-        snippet = {
-          expand = function(args)
-            luasnip.lsp_expand(args.body)
-          end,
+    version = '1.*',
+    opts = {
+      signature = { enabled = true },
+      keymap = {
+        preset = 'default',
+        ['<C-f>'] = { 'show' },
+      },
+      appearance = {
+        nerd_font_variant = 'mono',
+      },
+      completion = {
+        documentation = {
+          auto_show = true,
+          auto_show_delay_ms = 500,
         },
-        completion = {
-          completeopt = 'menu,menuone,noinsert',
-        },
-        mapping = cmp.mapping.preset.insert {
-          ['<C-Space>'] = cmp.mapping.complete {},
-          ['<C-n>'] = cmp.mapping.select_next_item { behavior = cmp.SelectBehavior.Insert },
-          ['<C-p>'] = cmp.mapping.select_prev_item { behavior = cmp.SelectBehavior.Insert },
-          ['<Down>'] = cmp.mapping.select_next_item { behavior = cmp.SelectBehavior.Insert },
-          ['<Up>'] = cmp.mapping.select_prev_item { behavior = cmp.SelectBehavior.Insert },
-          ['<C-y>'] = cmp.mapping(
-            cmp.mapping.confirm {
-              behavior = cmp.ConfirmBehavior.Insert,
-              select = true,
+        menu = {
+          draw = {
+            columns = { { 'kind_icon' }, { 'label', 'label_description', gap = 1 }, { 'source_name' } },
+            components = {
+              kind_icon = {
+                text = function(ctx)
+                  local kind_icon, _, _ = require('mini.icons').get('lsp', ctx.kind)
+                  return kind_icon
+                end,
+                highlight = function(ctx)
+                  local _, hl, _ = require('mini.icons').get('lsp', ctx.kind)
+                  return hl
+                end,
+              },
+              kind = {
+                highlight = function(ctx)
+                  local _, hl, _ = require('mini.icons').get('lsp', ctx.kind)
+                  return hl
+                end,
+              },
             },
-            { 'i', 'c' }
-          ),
+            treesitter = { 'lsp' },
+          },
         },
-        sources = {
-          { name = 'lazydev', group_index = 0 },
-          { name = 'nvim_lsp' },
-          { name = 'luasnip' },
-          { name = 'path' },
-          { name = 'buffer' },
+      },
+      sources = {
+        default = { 'copilot', 'lazydev', 'lsp', 'path', 'snippets', 'buffer' },
+        providers = {
+          lazydev = {
+            name = 'LazyDev',
+            module = 'lazydev.integrations.blink',
+            score_offset = 100,
+          },
+          copilot = {
+            name = 'copilot',
+            module = 'blink-copilot',
+            score_offset = 100,
+            async = true,
+          },
         },
-      }
-
-      luasnip.config.set_config {
-        history = false,
-        updateevents = 'TextChanged,TextChangedI',
-      }
-
-      -- Load custom specific languages snippets
-      require('luasnip.loaders.from_lua').load { paths = '~/.config/nvim/lua/snippets/ ' }
-
-      vim.keymap.set({ 'i', 's' }, '<c-k>', function()
-        if luasnip.expand_or_jumpable() then
-          luasnip.expand_or_jump()
-        end
-      end, { silent = true })
-
-      vim.keymap.set({ 'i', 's' }, '<c-j>', function()
-        if luasnip.jumpable(-1) then
-          luasnip.jump(-1)
-        end
-      end, { silent = true })
-    end,
+      },
+      fuzzy = { implementation = 'prefer_rust_with_warning' },
+    },
+    opts_extend = { 'sources.default' },
   },
 }

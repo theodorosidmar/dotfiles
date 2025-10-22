@@ -16,3 +16,7 @@ DOTFILES=$HOME/dotfiles
 # vim
 VI_MODE_SET_CURSOR=true
 KEYTIMEOUT=1
+
+# asdf
+export ASDF_DATA_DIR=~/.asdf
+export PATH="$ASDF_DATA_DIR/shims:$PATH"

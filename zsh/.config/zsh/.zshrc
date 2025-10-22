@@ -1,5 +1,6 @@
 # Plugins
 plugins=(
+  asdf
   vi-mode
   git
   docker
@@ -7,7 +8,6 @@ plugins=(
   node
   npm
   gradle
-  mvn
   aws
   kubectl
   kubectx
@@ -27,8 +27,6 @@ source $ZDOTDIR/aliasrc
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # asdf
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
 . $HOME/.asdf/plugins/java/set-java-home.zsh
 
 # zoxide

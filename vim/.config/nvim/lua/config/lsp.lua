@@ -2,6 +2,7 @@ vim.lsp.enable {
   'lua_ls',
   'ts_ls',
   'kotlin_lsp',
+  'copilot',
 }
 
 vim.api.nvim_create_autocmd('LspAttach', {
@@ -62,8 +63,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
     if client:supports_method(vim.lsp.protocol.Methods.textDocument_inlineCompletion) then
       vim.lsp.inline_completion.enable(not vim.lsp.inline_completion.is_enabled())
-      map('<C-y>', vim.lsp.inline_completion.get, 'LSP: accept inline completion', 'i')
-      map('<C-n>', vim.lsp.inline_completion.select, 'LSP: switch inline completion', 'i')
+      map('<C-f>', vim.lsp.inline_completion.get, 'LSP: accept inline completion', 'i')
+      map('<C-g>', vim.lsp.inline_completion.select, 'LSP: switch inline completion', 'i')
     end
   end,
 })

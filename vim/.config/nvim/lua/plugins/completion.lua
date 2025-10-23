@@ -10,7 +10,6 @@ return {
       signature = { enabled = true },
       keymap = {
         preset = 'default',
-        ['<C-f>'] = { 'show' },
       },
       appearance = {
         nerd_font_variant = 'mono',
@@ -22,7 +21,7 @@ return {
         },
         menu = {
           draw = {
-            columns = { { 'kind_icon' }, { 'label', 'label_description', gap = 1 }, { 'source_name' } },
+            columns = { { 'label' }, { 'kind_icon', 'label_description', gap = 1 }, { 'kind', 'source_name', gap = 1 } },
             components = {
               kind_icon = {
                 text = function(ctx)
@@ -46,13 +45,8 @@ return {
         },
       },
       sources = {
-        default = { 'copilot', 'lazydev', 'lsp', 'path', 'snippets', 'buffer' },
+        default = { 'copilot', 'lsp', 'path', 'snippets', 'buffer' },
         providers = {
-          lazydev = {
-            name = 'LazyDev',
-            module = 'lazydev.integrations.blink',
-            score_offset = 100,
-          },
           copilot = {
             name = 'copilot',
             module = 'blink-copilot',

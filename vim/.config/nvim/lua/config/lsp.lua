@@ -6,9 +6,11 @@ vim.lsp.enable {
 
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(event)
+    local bufnr = event.buf
+
     local map = function(keys, func, desc, mode)
       mode = mode or 'n'
-      vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = 'LSP: ' .. desc })
+      vim.keymap.set(mode, keys, func, { buffer = bufnr, desc = 'LSP: ' .. desc })
     end
     map('gd', require('telescope.builtin').lsp_definitions, '[G]oto [D]efinition')
     map('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
@@ -23,37 +25,45 @@ vim.api.nvim_create_autocmd('LspAttach', {
       vim.lsp.buf.hover { border = 'rounded' }
     end, 'Hover Documentation')
 
-    local client = vim.lsp.get_client_by_id(event.data.client_id)
-    if client and client:supports_method(vim.lsp.protocol.Methods.textDocument_completion) then
+    local client = assert(vim.lsp.get_client_by_id(event.data.client_id))
+
+    if client:supports_method(vim.lsp.protocol.Methods.textDocument_completion) then
+      vim.lsp.completion.enable(true, client.id, bufnr, { autotrigger = true })
+      vim.opt.completeopt = { 'menu', 'menuone', 'noinsert', 'fuzzy', 'popup' }
+      vim.opt.shortmess:append 'c'
+
       local highlight_augroup = vim.api.nvim_create_augroup('LspHighlight', { clear = false })
-      vim.api.nvim_create_autocmd({ 'CursorHold', 'CursorHoldI' }, {
-        buffer = event.buf,
-        group = highlight_augroup,
-        callback = vim.lsp.buf.document_highlight,
+      vim.api.nvim_create_autocmd('LspDetach', {
+        group = vim.api.nvim_create_augroup('lsp-detach', { clear = true }),
+        callback = function(args)
+          vim.lsp.buf.clear_references()
+          vim.api.nvim_clear_autocmds { group = 'LspHighlight', buffer = args.buf }
+        end,
       })
+
+      if client:supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight) then
+        vim.api.nvim_create_autocmd({ 'CursorHold', 'CursorHoldI' }, {
+          buffer = bufnr,
+          group = highlight_augroup,
+          callback = vim.lsp.buf.document_highlight,
+        })
+      end
+
       vim.api.nvim_create_autocmd({ 'CursorMoved', 'CursorMovedI' }, {
-        buffer = event.buf,
+        buffer = bufnr,
         group = highlight_augroup,
         callback = vim.lsp.buf.clear_references,
       })
-      vim.api.nvim_create_autocmd('LspDetach', {
-        group = vim.api.nvim_create_augroup('lsp-detach', { clear = true }),
-        callback = function(event2)
-          vim.lsp.buf.clear_references()
-          vim.api.nvim_clear_autocmds { group = 'LspHighlight', buffer = event2.buf }
-        end,
-      })
-      if client and client:supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint) then
-        map('<leader>th', function()
-          vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled { bufnr = event.buf })
-        end, '[T]oggle Inlay [H]ints')
-      end
+    end
 
-      vim.opt.completeopt = { 'menu', 'menuone', 'noinsert', 'fuzzy', 'popup' }
-      vim.lsp.completion.enable(true, client.id, event.buf, { autotrigger = true })
-      vim.keymap.set('i', '<C-Space>', function()
-        vim.lsp.completion.get()
-      end)
+    if client:supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint) then
+      vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+    end
+
+    if client:supports_method(vim.lsp.protocol.Methods.textDocument_inlineCompletion) then
+      vim.lsp.inline_completion.enable(not vim.lsp.inline_completion.is_enabled())
+      map('<C-y>', vim.lsp.inline_completion.get, 'LSP: accept inline completion', 'i')
+      map('<C-n>', vim.lsp.inline_completion.select, 'LSP: switch inline completion', 'i')
     end
   end,
 })

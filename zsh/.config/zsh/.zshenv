@@ -8,6 +8,7 @@ ZSH="$HOME/.oh-my-zsh"
 
 # Editor
 EDITOR=nvim
+KUBE_EDITOR=nvim
 
 # paths
 WORKSPACE=$HOME/workspace

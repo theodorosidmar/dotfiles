@@ -39,7 +39,8 @@ nmap <leader>gsm :action GotoSuperMethod<cr>
 nmap <leader>gm :action FileStructurePopup<cr>
 nmap <leader>gh :action CallHierarchy<cr>
 nmap <leader>sf :action GotoFile<cr>
-nmap <leader>gr :action ShowUsages<cr>
+nmap gr :action ShowUsages<cr>
+nmap <leader>gr :action GotoRelated<cr>
 nmap <leader>gf :action RecentFiles<cr>
 nmap <leader>gl :action RecentLocations<cr>
 nmap <leader>b :action Back<cr>

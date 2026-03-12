@@ -7,7 +7,7 @@ XDG_DATA_HOME="$HOME/.local/share"
 ZSH="$HOME/.oh-my-zsh"
 
 # Editor
-EDITOR=nvim
+export EDITOR=nvim
 KUBE_EDITOR=nvim
 
 # paths

@@ -8,6 +8,7 @@ include $HOME/.config/i3/binds.conf
 include $HOME/.config/i3/rofi.conf
 include $HOME/.config/i3/printscreen.conf
 include $HOME/.config/i3/keyboard.conf
+include $HOME/.config/i3/mouse.conf
 include $HOME/.config/i3/gaps.conf
 
 # Font for window titles. Will also be used by the bar unless a different font

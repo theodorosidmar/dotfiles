@@ -12,12 +12,12 @@ alias \
     dps='docker container ls --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}"' \
     dpsa='docker container ls --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}" -a' \
     drmiu='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")' \
-    dcmp='docker-compose' \
-    dcu='docker-compose up' \
-    dcud='docker-compose up -d' \
-    dcd='docker-compose down' \
-    dcdv='docker-compose down -v' \
-    dcub='docker-compose up --build'
+    dcmp='docker compose' \
+    dcu='docker compose up' \
+    dcud='docker compose up -d' \
+    dcd='docker compose down' \
+    dcdv='docker compose down -v' \
+    dcub='docker compose up --build'
 
 # aws vault 
 alias \

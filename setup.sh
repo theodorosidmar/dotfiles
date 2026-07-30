@@ -2,6 +2,7 @@
 
 base=(
   zsh
+  fish
   git
   ohmyposh
 )

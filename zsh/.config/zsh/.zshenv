@@ -30,3 +30,6 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 
 # Claude
 export PATH="$HOME/.local/bin:$PATH"
+
+# AWS
+export AWS_PAGER=""

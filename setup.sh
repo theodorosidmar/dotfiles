@@ -20,6 +20,7 @@ system=(
 code=(
   vim
   alacritty
+  kitty
 )
 
 apps=( "${base[@]}" "${system[@]}" "${code[@]}" )

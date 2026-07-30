@@ -23,6 +23,9 @@ HISTFILE=$ZDOTDIR/.zsh_history
 # Aliases
 source $ZDOTDIR/aliasrc
 
+# Functions
+source $ZDOTDIR/functions.zsh
+
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

@@ -2,8 +2,7 @@ return {
   {
     'ThePrimeagen/refactoring.nvim',
     dependencies = {
-      'nvim-lua/plenary.nvim',
-      'nvim-treesitter/nvim-treesitter',
+      'lewis6991/async.nvim',
     },
     config = function()
       require('refactoring').setup {
@@ -11,7 +10,7 @@ return {
       }
 
       vim.keymap.set({ 'n', 'x' }, '<leader>rp', function()
-        require('telescope').extensions.refactoring.refactors()
+        require('refactoring').select_refactor()
       end, { desc = 'Refactor' })
     end,
   },

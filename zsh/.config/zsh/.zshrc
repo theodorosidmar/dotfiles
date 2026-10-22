@@ -35,8 +35,12 @@ source $ZDOTDIR/functions.zsh
 # zoxide
 eval "$(zoxide init zsh)"
 
-# oh-my-posh
-eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/config.toml)"
+# starship
+eval "$(starship init zsh)"
+function set_win_title(){
+    echo -ne "\033]0; $(basename "$PWD") \007"
+}
+precmd_functions+=(set_win_title)
 
 # include hidden files
 _comp_options+=(globdots)

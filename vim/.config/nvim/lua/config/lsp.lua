@@ -28,12 +28,21 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
     local client = assert(vim.lsp.get_client_by_id(event.data.client_id))
 
-    if client:supports_method(vim.lsp.protocol.Methods.textDocument_completion) then
-      vim.lsp.completion.enable(true, client.id, bufnr, { autotrigger = true })
-      vim.opt.completeopt = { 'menu', 'menuone', 'noinsert', 'fuzzy', 'popup' }
-      vim.opt.shortmess:append 'c'
-
+    -- Highlight references of the word under the cursor
+    if client:supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight) then
       local highlight_augroup = vim.api.nvim_create_augroup('LspHighlight', { clear = false })
+      vim.api.nvim_create_autocmd({ 'CursorHold', 'CursorHoldI' }, {
+        buffer = bufnr,
+        group = highlight_augroup,
+        callback = vim.lsp.buf.document_highlight,
+      })
+
+      vim.api.nvim_create_autocmd({ 'CursorMoved', 'CursorMovedI' }, {
+        buffer = bufnr,
+        group = highlight_augroup,
+        callback = vim.lsp.buf.clear_references,
+      })
+
       vim.api.nvim_create_autocmd('LspDetach', {
         group = vim.api.nvim_create_augroup('lsp-detach', { clear = true }),
         callback = function(args)
@@ -41,30 +50,16 @@ vim.api.nvim_create_autocmd('LspAttach', {
           vim.api.nvim_clear_autocmds { group = 'LspHighlight', buffer = args.buf }
         end,
       })
-
-      if client:supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight) then
-        vim.api.nvim_create_autocmd({ 'CursorHold', 'CursorHoldI' }, {
-          buffer = bufnr,
-          group = highlight_augroup,
-          callback = vim.lsp.buf.document_highlight,
-        })
-      end
-
-      vim.api.nvim_create_autocmd({ 'CursorMoved', 'CursorMovedI' }, {
-        buffer = bufnr,
-        group = highlight_augroup,
-        callback = vim.lsp.buf.clear_references,
-      })
     end
 
     if client:supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint) then
-      vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+      vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
     end
 
     if client:supports_method(vim.lsp.protocol.Methods.textDocument_inlineCompletion) then
-      vim.lsp.inline_completion.enable(not vim.lsp.inline_completion.is_enabled())
-      map('<C-y>', vim.lsp.inline_completion.get, 'LSP: accept inline completion', 'i')
-      map('<C-g>', vim.lsp.inline_completion.select, 'LSP: switch inline completion', 'i')
+      vim.lsp.inline_completion.enable(true, { bufnr = bufnr })
+      map('<C-y>', vim.lsp.inline_completion.get, 'accept inline completion', 'i')
+      map('<C-g>', vim.lsp.inline_completion.select, 'switch inline completion', 'i')
     end
   end,
 })

@@ -64,7 +64,7 @@ vim.keymap.set('n', '<leader>sn', function()
   builtin.find_files { cwd = vim.fn.stdpath 'config' }
 end, { desc = '[S]earch [N]eovim files' })
 
--- Search for files in the current working directory
+-- Search for files in the current working directory, including hidden ones but not .git/
 vim.keymap.set('n', '<leader>sf', function()
-  builtin.find_files { hidden = true }
+  builtin.find_files { find_command = { 'rg', '--files', '--hidden', '--glob', '!**/.git/*' } }
 end, { desc = '[S]earch [F]iles' })

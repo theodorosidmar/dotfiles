@@ -65,3 +65,8 @@ vim.opt.wrap = false
 
 -- Borders
 vim.o.winborder = 'rounded'
+
+-- Indentation
+vim.opt.expandtab = true -- Use spaces instead of tabs
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4

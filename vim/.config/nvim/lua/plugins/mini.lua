@@ -22,6 +22,8 @@ return { -- Collection of various small independent plugins/modules
 
     -- Beauty
     require('mini.icons').setup()
+    -- Serve icons to plugins that expect nvim-web-devicons (e.g. telescope)
+    MiniIcons.mock_nvim_web_devicons()
     require('mini.tabline').setup()
     require('mini.statusline').setup()
 

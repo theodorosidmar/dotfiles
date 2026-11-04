@@ -33,7 +33,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 xbindkeys --poll-rc
-xrandr --output HDMI-1 --primary --right-of DP-0
+xrandr --output DP-2 --primary --mode 1920x1080 --rate 144 --right-of DP-0
 xrandr --output DP-0 --rotate right
 
 exec i3
